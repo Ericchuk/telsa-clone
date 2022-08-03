@@ -3,7 +3,7 @@
     --primary:rgb(36, 36, 36);
     --secondary:white;
     --tertiary:black;
-    --bg:rgba(103, 102, 102, 0.73);
+    --bg:rgba(211, 211, 211, 0.72);
 }
 *{
     margin:0;
@@ -101,10 +101,12 @@ section{
 }
 .bg-6{
     background-image: url(images/chargert.jpeg);
+    padding:70px 0 0;
 }
 section h1{
     font-size: 40px;
     margin:10px 0 15px;
+    animation: slideFromCenter ease-in 2s;
 }
 section p{
     font-size: 20px;
@@ -132,7 +134,7 @@ section .buttonSection button{
     border:none;
     outline: none;
     color:var(--primary);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: .1rem;
 }
 section .buttonSection .firstBtn{
@@ -140,4 +142,25 @@ section .buttonSection .firstBtn{
     margin:0 20px 0 0;
     background-color:var(--primary);
     color:white;
+}
+.bg-6 .buttonSection{
+    left:40%;
+    bottom: 22%;
+    /* border:2px solid black; */
+}
+.bg-6 .buttonSection button{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    width:150%;
+}
+
+
+    /* ANIMATION */
+@keyframes slideFromCenter{
+    top{
+        transition: transform(-40px);
+    }
+    bottom{
+        transition: transform(0);
+    }
 }
