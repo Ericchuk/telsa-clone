@@ -9,6 +9,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-y: hidden; */
 }
 .container{
     margin: 0% auto;
@@ -37,6 +38,7 @@ ul li{
     border-radius: 15px;
     transition: background-color .2s ease-in;
     padding:7px 10px;
+    font-weight: 600;
 }
 ul li a{
     margin:0 5px;
@@ -56,18 +58,7 @@ ul li:hover{
 .lastNav li{
     margin:0 10px;
 }
-.lastNav li ul{
-    display: none;
-    position: absolute;
-    top:0;
-    right:0;
-    height: 100vh;
-    border:2px solid var(--tertiary);
-    width:250px;
-}
-.lastNav li ul a{
-    margin:10px 0px;
-}
+
 
 /* SECTIONS */
 section{
@@ -106,11 +97,12 @@ section{
 section h1{
     font-size: 40px;
     margin:10px 0 15px;
-    animation: slideFromCenter ease-in 2s;
+    animation: slideFromCenter linear 2s alternate;
 }
 section p{
     font-size: 20px;
     margin:0 0 10px;
+    animation: slideFromCenter  linear 2.5s alternate;
 }
 section p a{
     text-decoration: none;
@@ -136,12 +128,15 @@ section .buttonSection button{
     color:var(--primary);
     font-weight: 700;
     letter-spacing: .1rem;
+    cursor: pointer;
+    animation: slideFromCenterRight  linear 3s alternate;
 }
 section .buttonSection .firstBtn{
     padding:15px 80px;
     margin:0 20px 0 0;
     background-color:var(--primary);
     color:white;
+    animation: slideFromCenterLeft  linear 3s alternate;
 }
 .bg-6 .buttonSection{
     left:40%;
@@ -153,14 +148,98 @@ section .buttonSection .firstBtn{
     color: var(--secondary);
     width:150%;
 }
-
+/* MODAL  */
+.modal{
+    /* display: none; */
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.679);
+    width:100%;
+    height: 100vh;
+    z-index: 4;
+}
+.modal main{
+    position: absolute;
+    top:-20px;
+    right:0px;
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+    height: 110vh;
+    /* border:2px solid var(--tertiary); */
+    background-color: var(--secondary);
+    width:300px;
+    padding:120px 10px 30px;
+}
+.modal main .svgContainer{
+    position: fixed;
+    top:0;
+    width:20%;
+    height:100px;
+    /* border:2px solid black; */
+    background-color: var(--secondary);
+}
+.modal main svg{
+    position: absolute;
+    right:10px;
+    bottom: 45px;
+    padding:0;
+    /* border:2px solid black; */
+    width:auto;
+}
+.modal .tds-icon{
+    width:100px;
+}
+.modal li{
+    margin:10px 0px;
+}
+.modal li:last-child{
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+}
+.modal li img{
+    width:30px;
+    margin: 0 10px 0 0;
+}
 
     /* ANIMATION */
 @keyframes slideFromCenter{
-    top{
-        transition: transform(-40px);
+    0%{
+        position: relative;
+        top:200px;
     }
-    bottom{
-        transition: transform(0);
+    100%{
+        position: relative;
+        top:0px;
     }
+}
+
+
+@keyframes slideFromCenterLeft {
+    0%{
+        position: relative;
+        left:-100px;
+    }
+    100%{
+        position: relative;
+        left:0;
+    }
+}
+
+@keyframes slideFromCenterRight {
+    0%{
+        position: relative;
+        left:100px;
+    }
+    100%{
+        position: relative;
+        left:0;
+    }
+}
+
+/* CLASSLIST    */
+
+.blurOnMenu{
+    filter:blur(2px)
 }
