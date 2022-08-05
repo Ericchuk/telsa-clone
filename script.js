@@ -10,7 +10,7 @@ function hide(){
         // section.classlist.t(blurOnMenu)
     }else{
         modal.style.display = "block";
-        section.classlist.toggle("blurOnMenu")
+        // section.classlist.toggle("blurOnMenu")
         body.style.overflowY = "hidden";
     }
 }
