@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;700&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@500;600;700;800&family=Noto+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@500;700&family=Public+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
 :root{
     --primary:rgb(36, 36, 36);
     --secondary:white;
@@ -20,7 +20,7 @@ h1{
     font-size: 35px;
 }
 p{
-    font-size: 19px;
+    font-size: 17px;
 }
 a{
     text-decoration: none;
@@ -150,7 +150,7 @@ section.bg-1{
     width: 100%;
     height: 100vh;
     z-index: 1;
-    box-shadow: inset 1px -150px 990px black;
+    box-shadow: inset 0px -150px 50px black;
 }
 .bg-1 h1{
     position: absolute;
@@ -175,7 +175,7 @@ section.bg-1{
     width: 100%;
     padding:0 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -185,7 +185,7 @@ section.bg-1{
     color:var(--secondary);
 }
 .bg-1 button{
-    width:100%;
+    width:355px;
     padding:15px;
     border:3px solid var(--secondary);
     background-color: transparent;
@@ -193,4 +193,265 @@ section.bg-1{
     margin:30px 0 0;
     border-radius: 100px;
     font-weight: 600;
+}
+
+.bg-2{
+    margin:0;
+    background-color: black;
+}
+.bg-2 h1{
+    color:var(--secondary);
+    box-shadow: 10px 0px -100px 500px black;
+    font-size: 25px;
+    padding:30px 0;
+    /* border:2px solid red; */
+}
+.bg-2 .videoAndTextSection{
+    position: relative;
+}
+.bg-2 .videoAndTextSection video{
+    /* position: absolute;
+    top:0;
+    left:0; */
+    width:100%;
+    height: 200px;
+    margin:0;
+}
+.bg-2 .videoAndTextSection .textArea{
+    color:var(--secondary);
+    text-align: left;
+    padding:30px 20px;
+}
+.bg-2 .videoAndTextSection .textArea p{
+    font-size: 15px;
+    margin:20px 0 0;
+    line-height: 1.7rem;
+}
+.bg-3{
+    background-color: black;
+    padding:100px 0 0;
+    color:var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bg-3 div{
+    text-align: left;
+    padding:20px 0px;
+}
+.bg-3 .desc{
+    padding:20px 20px;
+}
+.bg-3 #last p{
+    padding:10px 0px 40px;
+}
+.bg-3 h4{
+    font-size: 18px;
+}
+.bg-3 div p{
+    font-size: 15.5px;
+    margin:20px 0;
+    line-height: 1.7rem;
+}
+.bg-4{
+    position: relative;
+}
+.bg-4 img{
+    /* height: 75vh; */
+}
+.bg-4 .blueAreaFlexed{
+    position: absolute;
+    top:75%;
+    color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:20px 30px;
+}
+.bg-4 .blueAreaFlexed div{
+    width:50%;
+    margin:0 10px;
+    /* border:2px solid black; */
+}
+.bg-4 .blueAreaFlexed div h2{
+    font-size: 21px;
+    margin:0 0 5px;
+}
+.bg-4 .blueAreaFlexed div p{
+    font-size: 9px;
+}
+.bg-5{
+    text-align: left;
+    padding:20px;
+    margin: 0;
+}
+.bg-5 h4{
+    font-weight: 400;
+    margin:5px 0;
+    color:rgb(116, 116, 116);
+}
+.bg-5 h2{
+   margin:5px 0 15px;
+}
+.bg-5 p{
+    line-height: 1.7rem;
+    color:rgb(107, 105, 105);
+}
+.bg-5 button{
+    width:100%;
+    margin:20px 0;
+    padding:10px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: transparent;
+    border:3px solid black;
+    border-radius:100px;
+}
+.bg-6{
+    background-color: rgb(242, 242, 242);
+    text-align: left;
+    padding:100px 0px 60px;
+}
+.bg-6 h2,
+.bg-6 .first{
+    padding:10px 20px;
+}
+.bg-6 .first{
+    padding:20px 20px 50px;
+}
+.bg-6 aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:170%;
+    overflow-x: hidden;
+    padding:40px 0;
+}
+.bg-6 aside div:first-child{
+    padding:0 20px;
+}
+.bg-6 aside div h4{
+    font-size: 22px;
+    margin:10px 0;
+}
+.bg-6 aside div p{
+    line-height: 1.7rem;
+    font-size: 16px;
+}
+.bg-6 aside div.innerSection{
+    margin:25px 0;
+    /* border:2px solid red; */
+}
+.bg-6 aside div.innerSection p{
+    margin:5px 0 10px;
+    line-height: normal;
+
+}
+.bg-6 .center{
+    text-align: center;
+    font-size: 15px;
+}
+.bg-7{
+    background-color: black;
+    color:var(--secondary);
+}
+.bg-7 aside{
+    text-align: left;
+    padding:30px 0px;
+}
+.bg-7 aside h4{
+    font-weight: 500;
+    padding:0px 20px;
+}
+.bg-7 aside h2{
+    margin:5px 0 20px;
+    padding:0px 20px;
+}
+.bg-7 aside p{
+    font-size: 15.5px;
+    padding:0px 20px;
+}
+.bg-7 aside button{
+    width:90%;
+    border:3px solid var(--secondary);
+    border-radius:100px;
+    padding:10px;
+    background-color: transparent;
+    color:var(--secondary);
+    font-weight: 600;
+    margin:30px 20px 60px;
+}
+.bg-7 aside div h3{
+    padding:20px;
+    font-size: 17px;
+}
+.bg-7 aside div p{
+    margin:0 0 60px;
+    line-height: 1.7rem;
+}
+.bg-8{
+    position: relative;
+}
+.bg-8 video{
+    height: auto;
+}
+.bg-8 aside{
+    position: absolute;
+    top:30%;
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin:0 20px;
+    color:var(--secondary);
+}
+.bg-8 aside div{
+    text-align: center;
+}
+.bg-8 aside h4{
+    font-size: 22px;
+    margin:0 0 6px;
+}
+.bg-8 aside div p{
+    font-size: 12px;
+    line-height: 1.3rem;
+}
+.bg-8 div{
+    text-align: left;
+    padding:35px 20px;
+}
+.bg-8 div h4{
+    font-size: 20px;
+    font-weight: 300;
+}
+.bg-8 div h2{
+    margin:0 0 15px;
+}
+.bg-8 div p{
+    line-height: 1.7rem;
+    font-size: 15px;
+}
+.bg-8 div button{
+    width:100%;
+    border:3px solid var(--primary);
+    border-radius:100px;
+    padding:10px;
+    background-color: transparent;
+    color:var(--primary);
+    font-weight: 400;
+    margin:40px 0px 100px;
+}
+.bg-9{
+    text-align: left;
+}
+.bg-9 h2,
+.bg-9 p{
+    font-weight: 400;
+    padding:30px 20px 10px;
+}
+.bg-9 p{
+    font-size: 15px;
+    line-height: 1.7rem;
+    margin:0 0 20px;
 }
