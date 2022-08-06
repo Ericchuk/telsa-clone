@@ -21,16 +21,34 @@ a{
     font-family: 'Noto Sans', sans-serif;
     /* font-family: Gotham; */
 }
-@media screen and (min-width:300px) and (max-width:700px){
+li{
+    list-style-type: none;
+}
+@media screen and (min-width:300px) and (max-width:1100px){
     .navContainer{
-        display:none;
+        display:flex;
+        position: fixed;
+        z-index: 3;
+        width:100%;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         padding:20px;
     }
+    .forDesktop{
+        display: none;
+    }
     .navContainer svg{
         width:120px;
+    }
+    ul li{
+        font-weight: 600;
+        padding:5px 10px;
+        border-radius: 15px;
+        margin:0 10px 0 0;
+    }
+    ul li:hover{
+        background-color: var(--bg);
     }
     section{
         text-align: center;
@@ -99,11 +117,83 @@ a{
         background-image: url(images/chargerm.jpeg);
         padding:70px 0 0;
     }
+    .bg-6 .buttonSection{
+        /* border:2px solid black; */
+        left:25%;
+        width:100%;
+    }
     .modal{
-        position: absolute;
+        display: none;
+        position: fixed;
         top:0;
+        height: 100vh;
+        width:100%;
+        background-color: var(--primary);
+        border:2px solid green;
+        z-index:4;
+    }
+    .modal main{
+        position: fixed;
+        top:-20px;
+        right:0px;
+        scroll-behavior: smooth;
+        overflow-y:scroll;
+        height: 105vh;
+        /* border:2px solid var(--tertiary); */
+        background-color: var(--secondary);
+        width:300px;
+        padding:120px 15px 30px 30px;
+    }
+    .modal main .svgContainer{
+        position: fixed;
+        top:0;
+        width:260px;
+        height:100px;
+        /* padding:0 0 0 20px; */
+        /* border:2px solid black; */
+        background-color: var(--secondary);
+    }
+    .modal main svg{
+        position: absolute;
+        right:10px;
+        bottom: 45px;
+        padding:0;
+        /* border:2px solid black; */
+        width:auto;
+    }
+    .modal .tds-icon{
+        width:100px;
+    }
+    .modal li{
+        margin:10px 0px;
+        list-style: none;
+    }
+    .modal li:last-child{
+        display: flex;
+        justify-content:left;
+        align-items: flex-start;
+    }
+    .modal li img{
+        width:30px;
+        margin: 0 10px 0 0;
     }
 }
+/* @media screen and (min-width:400px) {
+    .modal main .svgContainer{
+        width:60%;
+    }
+} */
+/* @media screen and (min-width:500px) {
+    .modal main .svgContainer{
+        width:37%;
+    }
+}
+@media screen and (min-width:700px) {
+    .modal main .svgContainer{
+        width:250px;
+        border:2px solid black;
+    }
+} */
 @media screen and (min-width:1300px) {
 .navContainer{
     display: flex;
@@ -157,6 +247,10 @@ section{
     padding:50px 0 0;
     background-position: center;
 }
+.forMobile{
+    display: none;
+}
+
 .bg-model-3{
     background-image: url(images/M3-Homepage-Desktop-LHD.jpeg);
 }
@@ -236,7 +330,7 @@ section .buttonSection .firstBtn{
 /* MODAL  */
 .modal{
     display: none;
-    position: absolute;
+    position: fixed;
     top:0;
     right:0;
     background-color: rgba(0, 0, 0, 0.679);
@@ -245,7 +339,7 @@ section .buttonSection .firstBtn{
     z-index: 4;
 }
 .modal main{
-    position: absolute;
+    position: fixed;
     top:-20px;
     right:0px;
     scroll-behavior: smooth;
