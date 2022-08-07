@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;700&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@500;600;700;800&family=Noto+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@500;700&family=Public+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
 :root{
     --primary:rgb(36, 36, 36);
@@ -424,6 +425,433 @@ section .buttonSection .firstBtn{
     filter:blur(2px)
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;700&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@500;600;700;800&family=Noto+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@500;700&family=Public+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --primary:rgb(36, 36, 36);
+    --secondary:white;
+    --tertiary:black;
+    --bg:rgba(211, 211, 211, 0.72);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+a{
+    text-decoration: none;
+    color:var(--tertiary);
+}
+.container{
+    margin: 0% auto;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: Gotham; */
+}
+li{
+    list-style-type: none;
+}
+@media screen and (min-width:300px) and (max-width:1100px){
+    .navContainer{
+        display:flex;
+        position: fixed;
+        z-index: 3;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:20px;
+    }
+    .forDesktop{
+        display: none;
+    }
+    .navContainer svg{
+        width:120px;
+    }
+    ul li{
+        font-weight: 600;
+        padding:5px 10px;
+        border-radius: 15px;
+        margin:0 10px 0 0;
+    }
+    ul li:hover{
+        background-color: var(--bg);
+    }
+    section{
+        text-align: center;
+        height: 100vh;
+        padding:70px 0 0;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    section h1{
+        font-size: 40px;
+        margin:10px;
+    }
+    section p{
+        font-size: 19px;
+    }
+    section p a{
+        border-bottom: 1px solid black;
+    }
+    .buttonSection{
+        position: absolute;
+        left:5%;
+        width:90%;
+        bottom: 70px;
+        /* border:2px solid black; */
+    }
+    .bg-6 .buttonSection:last-child{
+        width:60%;
+    }
+    .buttonSection button{
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 15px;
+        width:100%;
+        margin:10px 0;
+        border-radius: 50px;
+        border:none;
+        outline: none;
+        color:var(--primary);
+    }
+    .buttonSection .firstBtn{
+        background-color:var(--primary);
+        color:white;
+        animation: slideFromCenterLeft  linear 3s alternate;
+    }
+    .bg-model-3{
+        background-image: url(images/M3-Homepage-Mobile-LHD.jpeg);
+    }
+    .bg-model-y{
+        background-image: url(images/mobile2.jpeg);
+    }
+    .bg-model-s{
+        background-image: url(images/Homepage-Model-S-Mobile-LHD.jpeg);
+    }
+    .bg-model-x{
+        background-image: url(images/Homepage-Model-X-Mobile-LHD.jpeg);
+    }
+    .bg-4{
+        background-image: url(images/_25-HP-SolarPanels-M.jpeg);
+    }
+    .bg-5{
+        background-image: url(images/Homepage-SolarRoof-Mobile-Global.webp);
+    }
+    .bg-6{
+        background-image: url(images/chargerm.jpeg);
+        padding:70px 0 0;
+    }
+    .bg-6 .buttonSection{
+        /* border:2px solid black; */
+        left:25%;
+        width:100%;
+    }
+    .modal{
+        display: none;
+        position: fixed;
+        top:0;
+        height: 100vh;
+        width:100%;
+        background-color: var(--primary);
+        border:2px solid green;
+        z-index:4;
+    }
+    .modal main{
+        position: fixed;
+        top:-20px;
+        right:0px;
+        scroll-behavior: smooth;
+        overflow-y:scroll;
+        height: 105vh;
+        /* border:2px solid var(--tertiary); */
+        background-color: var(--secondary);
+        width:300px;
+        padding:120px 15px 30px 30px;
+    }
+    .modal main .svgContainer{
+        position: fixed;
+        top:0;
+        width:260px;
+        height:100px;
+        /* padding:0 0 0 20px; */
+        /* border:2px solid black; */
+        background-color: var(--secondary);
+    }
+    .modal main svg{
+        position: absolute;
+        right:10px;
+        bottom: 45px;
+        padding:0;
+        /* border:2px solid black; */
+        width:auto;
+    }
+    .modal .tds-icon{
+        width:100px;
+    }
+    .modal li{
+        margin:10px 0px;
+        list-style: none;
+    }
+    .modal li:last-child{
+        display: flex;
+        justify-content:left;
+        align-items: flex-start;
+    }
+    .modal li img{
+        width:30px;
+        margin: 0 10px 0 0;
+    }
+}
+/* @media screen and (min-width:400px) {
+    .modal main .svgContainer{
+        width:60%;
+    }
+} */
+/* @media screen and (min-width:500px) {
+    .modal main .svgContainer{
+        width:37%;
+    }
+}
+@media screen and (min-width:700px) {
+    .modal main .svgContainer{
+        width:250px;
+        border:2px solid black;
+    }
+} */
+@media screen and (min-width:1300px) {
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px;
+    position: fixed;
+    width:100%;
+    z-index: 3;
+}
+svg{
+    width:10%;
+}
+ul li{
+    list-style: none;
+    border-radius: 15px;
+    transition: background-color .2s ease-in;
+    padding:7px 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ul li a{
+    margin:0 5px;
+}
+ul li:hover{
+    background-color: var(--bg);
+}
+.centerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lastNav{
+    display: flex;
+    position: relative;
+}
+.lastNav li{
+    margin:0 10px;
+}
+
+
+/* SECTIONS */
+section{
+    height:100vh;
+    position: relative;
+    top:0px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding:50px 0 0;
+    background-position: center;
+}
+.forMobile{
+    display: none;
+}
+
+.bg-model-3{
+    background-image: url(images/M3-Homepage-Desktop-LHD.jpeg);
+}
+.bg-model-y{
+    background-image: url(images/Desktop-ModelY.jpeg);
+}
+.bg-model-s{
+    background-image: url(images/Homepage-Model-S-Desktop-LHD.jpeg.crdownload);
+}
+.bg-model-x{
+    background-image: url(images/Homepage-Model-X-Desktop-LHD.jpeg);
+}
+.bg-4{
+    background-image: url(images/_25-HP-SolarPanels-D.jpeg);
+}
+.bg-5{
+    background-image: url(images/Homepage-SolarRoof-Desktop-Global);
+}
+.bg-6{
+    background-image: url(images/chargert.jpeg);
+    padding:70px 0 0;
+}
+section h1{
+    font-size: 40px;
+    margin:10px 0 15px;
+    animation: slideFromCenter linear 2s alternate;
+}
+section p{
+    font-size: 20px;
+    margin:0 0 10px;
+    animation: slideFromCenter  linear 2.5s alternate;
+}
+section p a{
+    text-decoration: none;
+    border-bottom: 1px solid var(--tertiary);
+    color:var(--tertiary);
+}
+section .buttonSection{
+    position: absolute;
+    bottom: 15%;
+    left:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .buttonSection button{
+    padding:15px  50px;
+    /* width:100%; */
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border:none;
+    outline: none;
+    color:var(--primary);
+    font-weight: 700;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    animation: slideFromCenterRight  linear 3s alternate;
+}
+section .buttonSection .firstBtn{
+    padding:15px 80px;
+    margin:0 20px 0 0;
+    background-color:var(--primary);
+    color:white;
+    animation: slideFromCenterLeft  linear 3s alternate;
+}
+.bg-6 .buttonSection{
+    left:40%;
+    bottom: 22%;
+    /* border:2px solid black; */
+}
+.bg-6 .buttonSection button{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    width:150%;
+}
+/* MODAL  */
+.modal{
+    display: none;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.679);
+    width:100%;
+    height: 100vh;
+    z-index: 4;
+}
+.modal main{
+    position: fixed;
+    top:-20px;
+    right:0px;
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+    height: 110vh;
+    /* border:2px solid var(--tertiary); */
+    background-color: var(--secondary);
+    width:300px;
+    padding:120px 10px 30px;
+}
+.modal main .svgContainer{
+    position: fixed;
+    top:0;
+    width:20%;
+    height:100px;
+    /* border:2px solid black; */
+    background-color: var(--secondary);
+}
+.modal main svg{
+    position: absolute;
+    right:10px;
+    bottom: 45px;
+    padding:0;
+    /* border:2px solid black; */
+    width:auto;
+}
+.modal .tds-icon{
+    width:100px;
+}
+.modal li{
+    margin:10px 0px;
+}
+.modal li:last-child{
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+}
+.modal li img{
+    width:30px;
+    margin: 0 10px 0 0;
+}
+
+    /* ANIMATION */
+@keyframes slideFromCenter{
+    0%{
+        position: relative;
+        top:200px;
+    }
+    100%{
+        position: relative;
+        top:0px;
+    }
+}
+
+
+@keyframes slideFromCenterLeft {
+    0%{
+        position: relative;
+        left:-100px;
+    }
+    100%{
+        position: relative;
+        left:0;
+    }
+}
+
+@keyframes slideFromCenterRight {
+    0%{
+        position: relative;
+        left:100px;
+    }
+    100%{
+        position: relative;
+        left:0;
+    }
+}
+
+/* CLASSLIST    */
+
+.blurOnMenu{
+    filter:blur(2px)
+}
+
+>>>>>>> c3a155ef472fa93a92ff5aa36969636b7ab30023
 =======
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;700&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@500;600;700;800&family=Noto+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@500;700&family=Public+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
 :root{
