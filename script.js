@@ -17,4 +17,5 @@ function hide(){
 
 menu.addEventListener("click", hide)
 // modal.addEventListener("click", hide)
-close.addEventListener("click", hide)
+close.addEventListener("click", hide);
+console.log(body.scrollHeight)
