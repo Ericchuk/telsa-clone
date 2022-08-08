@@ -13,7 +13,7 @@
         <header class="navContainer">
             <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z" fill="currentColor"></path></svg>
             <nav>
-                <p>Menu</p>
+                <p class="menu">Menu</p>
                 <div class="modalNav">
                    <ul class="ul">
                      <p class="closeContainerx">
@@ -83,9 +83,7 @@
                     <h2>200 mph</h2>
                     <p>Top Speed<sup>+</sup></p>
                 </span>
-                <span>
                     <button>ORDER NOW</button>
-                </span>
             </div>
         </section>
         <section class="bg-2">
@@ -208,40 +206,40 @@
             <img src="images/Model-S-Performance-Tri-Motor-Mobile.jpeg" alt="trimobile" class="with back area">
             <img src="images/Model-S-Performance-Dual-Motor-Mobile.jpeg" alt="dualmobile" class="with back area">
             <aside>
-                <div>
+                <div class="borderedTop">
                     <h4>Model S</h4>
                     <p>Dual motor All-Wheel Drive unlock more range than any other car in our current lineup, with insane power and maximum control</p>
                     <div class="innerSection">
-                        <span>
+                        <div>
                             <h4>3.1 s</h4>
                             <p>0-60 mph</p>
-                        </span>
-                        <span>
+                        </div>
+                        <div>
                             <h4>405 mi</h4>
                             <p>Range (EPA est.)</p>
-                        </span>
-                        <span>
+                        </div>
+                        <div>
                             <h4>670 hp</h4>
                             <p>Peak Power</p>
-                        </span>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="borderedTop">
                     <h4>Model S Plaid</h4>
                     <p>Maintain 1,000+ horsepower all the way to 200 mph with Tri-Motor Al Wheel Drive, featuring torque vectoring and three independent carbon-sleeved rotors.</p>
                     <div class="innerSection">
-                        <span>
+                        <div>
                             <h4>1.99 s<sup>*</sup></h4>
                             <p>0-60 mph</p>
-                        </span>
-                        <span>
+                        </div>
+                        <div>
                             <h4>396 mi</h4>
                             <p>Range (EPA est.)</p>
-                        </span>
-                        <span>
+                        </div>
+                        <div>
                             <h4>1,020 hp</h4>
                             <p>Peak Power</p>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -287,7 +285,7 @@
         
         <!-- RANGE AREA -->
         <section class="bg-8">
-            <video height="400" width="600" autoplay loop >
+            <video height="500" width="auto" autoplay loop >
                 <source src="images/Plaid-Range-Web-Desktop-8mb.mp4">
             </video>
             <aside class="overlay">
@@ -317,25 +315,23 @@
             <h2>Freedom to Travel</h2>
             <p>Enter a destination on your touchscreen and Trip Planner will automatically calculate your route with Superchargers along the way.</p>
             <aside>
-                <img src="images/SF-LA-Range-Map.jpeg" alt="map">
-                <img src="images/map_berkeley_bg-2x.jpeg" alt="map">
-                <img src="images/map_newyork_bg-2x.jpeg" alt="map">
-                <img src="images/map_florida_bg-2x.jpeg" alt="map">
-            </aside>
-            <aside>
                 <div>
+                    <img src="images/SF-LA-Range-Map.jpeg" alt="map">
                     <h4>San Francisco to Los Angeles</h4>
                     <h3>383 miles</h3>
                 </div>
                 <div>
+                    <img src="images/map_berkeley_bg-2x.jpeg" alt="map">
                     <h4>Berkeley to Lake Tahoe</h4>
                     <h3>178 miles</h3>
                 </div>
                 <div>
+                    <img src="images/map_newyork_bg-2x.jpeg" alt="map">
                     <h4>Manhattan to Boston</h4>
                     <h3>211 miles</h3>
                 </div>
                 <div>
+                    <img src="images/map_florida_bg-2x.jpeg" alt="map">
                     <h4>Fort Lauderdale to orlando</h4>
                     <h3>195 miles</h3>
                 </div>
@@ -347,6 +343,9 @@
 
         <section class="bg-10">
             <img src="images/Model-S-Safety-Hero-Mobile-Global-960x1140.jpeg" alt="safety analysis vehicle">
+            <p class="analysis analysis1">Side-Impact Protection </p>
+            <p class="analysis analysis2">Front-Impact Protection </p>
+            <p class="analysis analysis3">Very low Rollover Risk</p>
             <aside>
                 <h4>Safety</h4>
                 <h2>High Impact Protection</h2>
@@ -362,15 +361,21 @@
             <div>
                 <span>
                     <h4>360<sup>o</sup></h4>
-                    <p>Degrees<br>of Visibility</p>
+                    <p class="description">Degrees<br>of Visibility</p>
                 </span>
                 <span>
-                    <h4>250 m</h4>
-                    <p>of Powerful<br>Visual Processing</p>
+                    <h4>250m</h4>
+                    <p class="description">of Powerful<br>Visual Processing</p>
                 </span>
                 <span>
-                    <img src="" alt="lens">
-                    <p>Telsa<br>Vision</p>
+                    <div class="circle">
+                        <p class="blackbg">
+                            <p class="glare"></p>
+                            <p class="smallGlare"></p></p>
+                        
+                        
+                    </div>
+                    <p class="description">Telsa<br>Vision</p>
                 </span>
             </div>
             <aside>
@@ -385,159 +390,176 @@
             </aside>
         </section>
         <section class="bg-12">
-            <video width="400" height="400" autoplay loop >
-                <source src="images/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4">
-            </video>
-            <video width="400" height="400" autoplay loop >
-                <source src="images/A7I6LP_lane_change_0.mp4-2000_PYSUF4.mp4">
-            </video>
-            <video width="400" height="400" autoplay loop >
-                <source src="images/ZZNM9S_summon_1.mp4-2000_OQKCDY.mp4">
-            </video>
-            <video width="400" height="400" autoplay loop >
-                <source src="images/WM5XUG_parking.mp4-2000_EQUBJE.mp4">
-            </video>
-            <aside>
                 <div>
+                    <video width="400" height="400" autoplay loop >
+                        <source src="images/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4">
+                    </video>
                     <h4>Navigate on Autopilot</h4>
                     <p>Active guidance from on-ramp to off-ramp</p>
                 </div>
                 <div>
+                    <video width="400" height="400" autoplay loop >
+                        <source src="images/A7I6LP_lane_change_0.mp4-2000_PYSUF4.mp4">
+                    </video>
                     <h4>Auto Lane Change</h4>
                     <p>Automatically change lanes while driving on the highway</p>
                 </div>
                 <div>
+                     <video width="400" height="400" autoplay loop >
+                        <source src="images/ZZNM9S_summon_1.mp4-2000_OQKCDY.mp4">
+                     </video>
                     <h4>Summon</h4>
                     <p>Automatically retrieve your car</p>
                 </div>
                 <div>
+                    <video width="400" height="400" autoplay loop >
+                        <source src="images/WM5XUG_parking.mp4-2000_EQUBJE.mp4">
+                    </video>
                     <h4>Autopark</h4>
                     <p>Parallel and perpendicular parking with a single touch</p>
                 </div>
-            </aside>
         </section>
         
         <!-- MODEL S SPECS SECTION -->
-        <section class="bg-12">
+        <section class="bg-13">
             <img src="images/Model-S-Specs-Hero-Mobile-LHD.jpeg" alt="spec">
-            <aside>
-                <h2>Model S Specs</h2>
-                <div>
-                    <button>Model S Plaid</button>
-                    <div>
-                        <span>
-                            <h4>Range (EPA est.)</h4>
-                            <p>396 mi</p>
-                        </span>
-                        <span>
-                            <h4>1/4 Mile</h4>
-                            <p>9.23@155 mph trap speed</p>
-                        </span>
-                        <span>
-                            <h4>Peak Power</h4>
-                            <p>1,020 hp</p>
-                        </span>
-                        <span>
-                            <h4>Wheels</h4>
-                            <p>19" or 21"
-                            </p>
-                        </span>
-                        <span>
-                            <h4>Cargo</h4>
-                            <p>28 cu ft</p>
-                        </span>
-                        <span>
-                            <h4>Weight</h4>
-                            <p>4,766 lbs</p>
-                        </span>
-                    </div>
-                    <div>
-                        <span>
-                            <h4>*Acceleration</h4>
-                            <p>1.99 s 0-60 mph</p>
-                            <p>with rollout subtracted</p>
-                        </span>
-                        <span>
-                            <h4>†Top Speed</h4>
-                            <p>200 mph</p>
-                            <p>when equipped with paid hardware upgrades</p>
-                        </span>
-                        <span>
-                            <h4>Drag Coefficient</h4>
-                            <p>0.208 Cd</p>
-                        </span>
-                        <span>
-                            <h4>Powertrain</h4>
-                            <p>Tri Motor</p>
-                        </span>
-                        <span>
-                            <h4>Supercharging Max</h4>
-                            <p>250 kW</p>
-                        </span>
-                    </div>
+            <h2>Model S Specs</h2>
+             <div class="btnContainer">
+                <button>Model S Plaid</button>
+                <button>Model S</button>
+            </div>
+            <aside>    
+                <div class="plaid">
+                    <main>
+                        <div>
+                            <div class="span">
+                                <hr>
+                                <h4>Range (EPA est.)</h4>
+                                <p>396 mi</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>1/4 Mile</h4>
+                                <p>9.23@155 mph trap speed</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Peak Power</h4>
+                                <p>1,020 hp</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Wheels</h4>
+                                <p>19" or 21"
+                                </p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Cargo</h4>
+                                <p>28 cu ft</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Weight</h4>
+                                <p>4,766 lbs</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div  class="span">
+                                <hr>
+                                <h4>*Acceleration</h4>
+                                <p>1.99 s 0-60 mph</p>
+                                <p>with rollout subtracted</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>†Top Speed</h4>
+                                <p>200 mph</p>
+                                <p>when equipped with paid hardware upgrades</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Drag Coefficient</h4>
+                                <p>0.208 Cd</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Powertrain</h4>
+                                <p>Tri Motor</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Supercharging Max</h4>
+                                <p>250 kW</p>
+                            </div>
+                        </div>
+                    </main>
                 </div>
-                <div>
-                    <button>Model S</button>
-                    <div>
-                        <span>
-                            <hr>
-                            <h4>Range (EPA est.)</h4>
-                            <p>405 mi </p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Peak Power</h4>
-                            <p>670 hp</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Wheels</h4>
-                            <p>19" or 21</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Cargo</h4>
-                            <p>28 cu ft</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Acceleration</h4>
-                            <p>3.1 s 0-60 mph</p>
-                        </span>
-                    </div>
-                    <div>
-                        <span>
-                            <hr>
-                            <h4>Top Speed</h4>
-                            <p>155 mph</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Drag Coefficient</h4>
-                            <p>0.208 Cd</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Weight</h4>
-                            <p>4,561 lbs</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Powertrain</h4>
-                            <p>Dual Motor</p>
-                        </span>
-                        <span>
-                            <hr>
-                            <h4>Supercharging Max</h4>
-                            <p>250 kW</p>
-                        </span>
-                    </div>
+                <div class="unplaid">
+                    <main>
+                        <div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Range (EPA est.)</h4>
+                                <p>405 mi </p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Peak Power</h4>
+                                <p>670 hp</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Wheels</h4>
+                                <p>19" or 21</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Cargo</h4>
+                                <p>28 cu ft</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Acceleration</h4>
+                                <p>3.1 s 0-60 mph</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Top Speed</h4>
+                                <p>155 mph</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Drag Coefficient</h4>
+                                <p>0.208 Cd</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Weight</h4>
+                                <p>4,561 lbs</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Powertrain</h4>
+                                <p>Dual Motor</p>
+                            </div>
+                            <div  class="span">
+                                <hr>
+                                <h4>Supercharging Max</h4>
+                                <p>250 kW</p>
+                            </div>
+                        </div>
+                    </main>
+                   
                 </div>
             </aside>
         </section>
 
         <!-- MODEL S COMPARE AND ORDER SECTION  -->
-        <section class="bg-13">
+        <section class="bg-14">
             <h2>Model S</h2>
             <button>ORDER NOW</button>
             <button>COMPARE</button>
@@ -552,6 +574,6 @@
            <a href="#">News</a> 
         </footer>
     </article>
-    <script src="modals.js"></script>
+    <script src="modals.js" type="module"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ let modal = document.querySelector(".modal");
 let menu = document.querySelector(".navLast");
 let close = document.querySelector(".close");
 let section = document.querySelector(".bg")
-function hide(){
+ function hide(){
     if(modal.style.display === "block"){
         body.style.overflowY = "visible";
         modal.style.display = "none";
@@ -17,4 +17,6 @@ function hide(){
 
 menu.addEventListener("click", hide)
 // modal.addEventListener("click", hide)
-close.addEventListener("click", hide)
+close.addEventListener("click", hide);
+console.log(body.scrollHeight)
+// export {body} from "module";
