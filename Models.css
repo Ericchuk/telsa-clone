@@ -9,9 +9,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
-body{
-    /* overflow-y: hidden; */
+    overflow-x: hidden;
 }
 img{
     width: 100%;
@@ -290,14 +288,22 @@ section.bg-1{
 .bg-4 .blueAreaFlexed{
     color: var(--secondary);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:center;
+    align-items:flex-end;
     width:100%;
-    padding:20px 0px;
+    padding:0px 0px 70px;
+    height:50vh;
+    background-image: url(images/Model-S-Performance-Hero-Mobile-LHD.jpeg);
+    background-position: center;
+    background-size: cover;
 }
 .bg-4 .blueAreaFlexed div{
-    flex:2;
+    width:20%;
     margin:0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     /* border:2px solid black; */
 }
 .bg-4 .blueAreaFlexed div h2{
@@ -305,7 +311,8 @@ section.bg-1{
     margin:0 0 5px;
 }
 .bg-4 .blueAreaFlexed div p{
-    font-size: 9px;
+    font-size: 14px;
+    text-align: center;
 }
 .bg-5{
     text-align: left;
@@ -478,6 +485,8 @@ section.bg-1{
 }
 .bg-8 div h2{
     margin:0 0 15px;
+    font-weight: 500;
+    padding: 0 20px;
 }
 .bg-8 div p{
     line-height: 1.7rem;
@@ -506,4 +515,867 @@ section.bg-1{
     font-size: 15px;
     line-height: 1.7rem;
     margin:0 0 20px;
+}
+.bg-9 aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    padding:0;
+    margin:0;
+    /* width:100%; */
+    /* overflow-x: scroll; */
+    flex-wrap: wrap;
+}
+.bg-9 aside img{
+    height: 200px;
+    width: 100%;
+}
+.bg-9 aside div h4, h3{
+    margin:10px 20px;
+}
+.bg-9 aside h4{
+    font-size: 16px;
+    width:70%;
+    font-weight: 300;
+    border-top:3px solid black;
+    padding:10px 0 0;
+}
+.bg-9 aside h3{
+    font-weight: 400;
+    font-size: 25px;
+    width:100%;
+    text-align: left;
+}
+.bg-9 button{
+    background-color: transparent;
+    border:3px solid black;
+    border-radius: 100px;
+    padding:10px;
+    width:90%;
+    margin:30px 20px 0;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.bg-10{
+    padding:80px 0 0;
+    position: relative;
+    text-align: left;
+}
+.bg-10 img{
+    padding:0 0 20px;
+    /* z-index: 3; */
+    position: relative;
+}
+.bg-10 .analcont{
+    position:relative;
+    /* top:-500px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    /* border:2px solid black; */
+    /* height:100vh; */
+    color:white;
+    width:100%;
+    padding:0 20px;
+}
+/* .bg-10 .analcont .analysisCont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 5;
+}
+#lines{
+    background-color: black;
+    height:100px;
+    width:3px;
+    padding:1px;
+    position: relative;
+    top:40px;
+    margin:0 0 0 10px;
+    z-index: 5;
+}
+.analysisCont:first-child{
+    position: absolute;
+    top:0px;
+    right:60px;
+}
+.bg-10 .analcont .analysisCont:nth-child(2) #lines{
+    height: 150px;
+    top:60px;
+}
+.analysisCont:nth-child(2){
+    position: absolute;
+    top:80px;
+    left:65px;
+} */
+ /* THIS AREA CONTAINS THE DRAWING USED FOR THE VEHICLE IMACT ANALYSIS  */
+.bg-10 .analysis{
+    font-size: 10px;
+    text-align: right;
+    font-stretch:wider;
+    width:80px;
+}
+/* END HERE  */
+aside{
+    padding:10px 20px;
+    text-align: center;
+}
+h4{
+    font-size: 24px;
+    text-align: left;
+    font-weight: lighter;
+}
+aside h2{
+    font-weight:500;
+    margin:0px 0 15px;
+    text-align: left;
+}
+aside p{
+    font-size: 16px;
+    font-weight:200;
+    line-height: 1.7rem;
+    text-align: left;
+}
+button{
+    margin:40px 0 50px;
+    width:100%;
+    border:3px solid var(--primary);
+    color:var(--primary);
+    background-color: transparent;
+    padding:12px;
+    border-radius: 100px;
+}
+.bg-11{
+    position: relative;
+}
+.bg-11 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:28%;
+    left: auto;
+    width:100%;
+}
+.bg-11 div span{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.bg-11 div span h4{
+    font-size: 20px;
+    font-weight:500;
+}
+.bg-11 div span h4 sup{
+    font-size: 13px;
+    position: absolute;
+}
+/* DRAW THE LENS */
+.bg-11 div span .circle{
+    padding:15px 15px;
+    border:2px solid black;
+    border-radius:100px;
+    position: relative;
+    top:0;
+    width:10%;
+}
+.bg-11 div span .circle .blackbg{
+    padding:10px;
+    width:5%;
+    border-radius: 100px;
+    background-color: var(--primary);
+    position: absolute;
+    margin:0;
+}
+.bg-11 div span .circle .glare{
+    padding:3px;
+    top:10px;
+    left:10px;
+    border-radius: 100px;
+    background-color: var(--secondary);
+    position: absolute;
+    margin:0;
+}
+.bg-11 div span .circle .smallGlare{
+    padding:1.5px;
+    top:auto;
+    left:auto;
+    right:10px;
+    bottom: 10px;
+    border-radius: 100px;
+    background-color: var(--secondary);
+    position: absolute;
+    margin:0;
+}
+/* END  */
+.bg-11 div span .description{
+    font-size: 10px;
+    margin:10px 0 0px;
+}
+.bg-12{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bg-12 video{
+    /* border:2px solid green; */
+    width:100%;
+    height: fit-content;
+}
+.bg-12 div h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin:0;
+    padding:20px 20px 10px;
+}
+.bg-12 div p{
+    padding:0px 20px;
+    text-align: left;
+    font-weight: 100;
+    font-size: 18px;
+}
+.bg-13{
+    margin:60px 0 0;
+    background-color:black;
+    color:var(--secondary);
+    text-align: left;
+    padding:20px 0 80px;
+}
+.bg-13 h2{
+    margin:30px 0;
+}
+.bg-13 h2,
+.bg-13 .btnContainer{
+    padding:0 20px;
+}
+.bg-13 .btnContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg-13 .btnContainer button{
+    border:3px solid white;
+    color:var(--secondary);
+    font-weight: 600;
+    margin:30px 10px 30px 0;
+}
+.bg-13 aside{
+    display: flex;
+    padding:0 20px;
+}
+.bg-13 aside div{
+    position: relative;
+}
+.unplaid{
+    display: none;
+}
+.bg-13 aside main{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    position: relative;
+
+}
+.bg-13 aside main div{
+    width:45%;
+    margin:10px 10px 0 0;
+}
+.bg-13 aside main div .span{
+    margin:20px 0;
+    width: auto;
+}
+.bg-13 aside main div h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.bg-13 aside main div hr{
+    background-color: var(--secondary);
+    height:3px;
+    width:40px;
+    margin:5px 0 10px;
+}
+.bg-14{
+    padding:90px 0 0;
+}
+.bg-14 h2{
+    padding:20px 0;
+}
+.bg-14 button{
+    margin:10px 0;
+    width:90%;
+    font-weight:600;
+}
+.bg-14 p{
+    font-size: 13px;
+    padding:30px 20px;
+    line-height: 1.5rem;
+}
+.bg-14 p a{
+    text-decoration: underline;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px 0;
+}
+footer a{
+    font-size: 15px;
+    margin:5px 0;
+    padding:2px 5px;
+}
+@media screen and (min-width:375px) {
+    .bg-8 .overlay{
+        top:35%;
+    }
+    .bg-8 .overlay p{
+        font-size: 11px;
+    }
+    .bg-10 .analysis1{
+        /* border:2px solid black; */
+        top:80px;
+        left:230px;
+    }
+    .bg-10 .analysis2{
+        top:150px;
+        left:65px; 
+    }
+    .bg-10 .analysis3{
+        top:400px;
+        left:250px;
+    }
+    .bg-11 div{
+        top:36%;
+    }
+}
+@media screen and (min-width:414px) {
+    .bg-10 .analysis1{
+        /* border:2px solid black; */
+        top:9%;
+        left:65%;
+    }
+    .bg-10 .analysis2{
+        top:18%;
+        left:20%; 
+    }
+    .bg-10 .analysis3{
+        top:43%;
+        left:68%;
+    }
+}
+@media screen and (min-width:500px) {
+    .bg-1 .bg-1Bottom{
+        justify-content: center;
+        /* border:2px solid green; */
+    }
+    .bg-1 .bg-1Bottom button{
+        width: auto;
+        padding:10px 30px;
+    }
+    .bg-1 .bg-1Bottom p{
+        font-size: 16px;
+    }
+    .bg-2 .videoAndTextSection video{
+        width:100%;
+        object-fit: fill;
+        height: 400px;
+    }
+    .bg-3{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        padding:20px 20px 100px;
+    }
+    .bg-3 main{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg-3 main div{
+        width:50%;
+        /* border:2px solid green; */
+        padding:0;
+    }
+    .bg-3 main:nth-child(2) div:nth-child(1){
+        border:2px solidgreen;
+        order:2;
+    }
+    .bg-3 div video{
+        /* border: 2px solid red; */
+        object-fit: fill;
+        width:100%;
+        height:auto;
+    }
+    .bg-3 .desc{
+        padding:0px 0 0 20px;
+    }
+    .bg-3 #last p{
+        padding:0px 0px 0px;
+    }
+    .bg-3 div p{
+        font-size: 15.5px;
+        margin:10px 0;
+        line-height: 1.7rem;
+    } 
+    .bg-5 button{
+        width: auto;
+        padding:10px 35px;
+    }
+    .bg-6{
+        padding:0 10px 40px;
+    }
+    .bg-6 aside{
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .bg-6 .borderedTop{
+        width:32%;
+    }
+    .bg-6 .borderedTop .innerSection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bg-7{
+        position: relative;
+    }
+    #overlayImg{
+        margin:-232px 0 0;
+        background-color: black;
+        /* border:2px solid red; */
+        position: relative;
+        /* height:200px; */
+    }
+    .bg-7 aside h2{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .bg-7 aside button{
+        width: auto;
+        padding:10px 45px;
+    }
+    .bg-7 aside main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0px 20px;
+    }
+    .bg-7 aside main:nth-child(1) div:nth-child(1),
+    .bg-7 aside main:nth-child(3) div:nth-child(1){
+        order:2;
+        /* border:2px solid green; */
+    }
+    .bg-7 aside main:nth-child(2) div:nth-child(2){
+        /* text-align: right; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bg-7 aside main:nth-child(2) div:nth-child(2) p{
+        /* border:2px solid green; */
+        /* width:100%; */
+        margin:0 0 0 15%;
+        /* text-align: right; */
+    }
+    .bg-7 aside div h3{
+        padding:0px 0px 10px;
+    }
+    .bg-7 aside main div{
+        width:50%;
+        height: auto;
+        margin:0;
+        padding:0;
+    }
+    .bg-7 aside main div p{
+        padding:0 0 0 0px;
+        margin:0;
+    }
+    .bg-8 video{
+        width:100%;
+        height: auto;
+    }
+    .bg-8 .overlay{
+        width:100%;
+        top:30%;
+        justify-content: space-between;
+    }
+    .bg-8 .overlay div.overlayItems{
+        width:30%;
+    }
+    .bg-8 .overlay h4{
+        font-size: 25px;
+    }
+    .bg-8 .overlay p{
+        font-size: 15px;
+    }
+    .bg-8 div button{
+        width:auto;
+        padding:10px 45px;
+    }
+    .bg-9 .btnContainer9{
+        width:100%;
+        /* border:2px solid green; */
+        text-align: center;
+    }
+    .bg-9 button{
+        padding:10px 45px;
+        width:auto;
+    }
+    .analysis1{
+        margin:50px 0 0;
+    }
+    .analysis2{
+        margin:70px 0px 0 50px;
+    }
+    .analysis3{
+        margin:100px 0 0 80px;
+    }
+    .bg-10 h2{
+        font-weight: 700;
+    }
+    .bg-10{
+        z-index: 3;
+        background-color: var(--secondary);
+    }
+    .bg-10 aside{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    button{
+        width: auto;
+        text-align: left;
+    }
+    .bg-11 img{
+        margin:-200px 0 0;
+    }
+    .bg-11 div{
+        top:20%;
+    }
+    .bg-11 div span h4{
+        font-size: 30px;
+    }
+    .bg-11 div span .description{
+        font-size: 13px;
+    }
+    .bg-11 aside{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .bg-11 #marginUp{
+        /* border:2px solid green; */
+        margin:-200px 0 0;
+        z-index: 3;
+        position: relative;
+        background-color: var(--secondary);
+    }
+    .bg-12{
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+    .bg-12 div p{
+        font-size: 10px;
+    }
+    .bg-13{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bg-13 .btnContainer{
+        justify-content: center;
+    }
+    .btnContainer button{
+        width:100%;
+        text-align: center;
+    }
+    .bg-14{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bg-14 .btnCont{
+        width:50%;
+        padding:0 30px;
+        text-align: left;
+    }
+    .bg-14 .btnCont button{
+        width:60%;
+        text-align: center;
+    }
+    .bg-14 img{
+        width:50%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .forDesktop{
+        display: block;
+    }
+    .forMobile{
+        display:none;
+    }
+    section.bg-1{
+        background-image: url(images/Model-S-Main-Hero-Desktop-LHD.jpeg);
+        box-shadow: inset 0px -40px 100px black;
+    }
+    .bg-1 span{
+        width:20%;
+    }
+    .bg-1 .bg-1Bottom{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        display: flex;
+    }
+    .bg-1 .bg-1Bottom button{
+        width:25%;
+        margin:0;
+        text-align: center;
+    }
+    .bg-2 h1{
+        font-size: 30px;
+    }
+    .bg-2 .holderRel{
+        position: relative;
+        height: 150vh;
+        background-color: black ;
+        width:100%;
+        margin:-80px 0 0;
+    }
+    .bg-2 .videoAndTextSection{
+        padding:30px 60px;
+        position: absolute;
+        z-index: 3;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bg-2 .videoAndTextSection video{
+        border-radius: 30px;
+        height:600px;
+        object-fit: fill;
+        /* border:2px solid green; */
+    }
+    .bg-2 .videoAndTextSection div{
+        width:50%;
+        background-color: black;
+    }
+    .bg-2 .videoAndTextSection div p{
+        /* width:100%;
+        max-width:30%; */
+        text-align: left;
+        /* border:2px solid green; */
+    }
+    .bg-4 .blueAreaFlexed{
+        height: 60vh;
+        padding:0 0 70px;
+        background-image: url(images/Model-S-Performance-Hero-Desktop-LHD.jpeg);
+    }
+    .bg-4 .blueAreaFlexed div h2{
+        font-size: 30px;
+    }
+    .bg-4 .blueAreaFlexed div p{
+        font-size: 18px;
+    }
+    .bg-5 div{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width:100%;
+        position: relative;
+        flex-direction: column;
+        text-align: left;
+        padding:0 0 0 50px;
+    }
+    .bg-5 div p{
+        width:60%;
+        position: absolute;
+        right:20px;
+        top:10px;
+    }
+    .bg-6{
+        padding:100px 30px;
+    }
+    .bg-6 img{
+        position: absolute;
+        width:95%;
+        border-radius: 20px;
+    }
+    .bg-6 aside{
+        margin:500px 0 0;
+        width:100%;
+        justify-content: center;
+    }
+    .bg-6 aside .borderedTop{
+        width:44%;
+        margin:30px 50px 0 0;
+    }
+    .bg-7 #overlayImg{
+        margin:-140px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width:100%;
+        position: relative;
+        flex-direction: column;
+        text-align: left;
+        padding:30px 0 0 50px;
+    }
+    .bg-7 #overlayImg p{
+        width:60%;
+        position: absolute;
+        right:20px;
+        top:40px;
+    }
+    .bg-8{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .bg-8 div{
+        padding:0;
+    }
+    .bg-8 video{
+        width:auto;
+        margin:0;
+        padding:0;
+        margin-bottom: -5px;
+        height:500px;
+        /* border:2px solid red; */
+    }
+    .bg-8 #side{
+        width:40%;
+        height: 500px;
+        padding:20px 20px;
+        background-color: var(--secondary);
+        position: relative;
+    }
+    .bg-8 #side button{
+        position: absolute;
+        bottom:0;
+        margin:0 0 20px;
+    }
+    .bg-8 aside.overlay{
+        padding:0;
+        margin:0;
+        justify-content: flex-start;
+        top:70%;
+        width:70%;
+    }
+    .bg-8 .overlay h4{
+        width:100%;
+        text-align: center;
+        /* border:2px solid black; */
+    }
+    .bg-8 .overlay p{
+        margin:0;
+        padding: 0;
+        /* border:2px solid black; */
+    }
+    .bg-9 aside{
+        align-items: baseline;
+    }
+    .bg-10 aside{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width:100%;
+        position: relative;
+        flex-direction: column;
+        text-align: left;
+        padding:20px 0 20px 50px;
+    }
+    .bg-10 aside p{
+        width:60%;
+        position: absolute;
+        right:20px;
+        top:30px;
+    }
+    .bg-11 img{
+        height:auto;
+        margin:-350px 0 0;
+    }
+    .bg-11{
+        background-color: var(--secondary);
+    }
+    .bg-11 div{
+        flex-direction: column;
+        position: absolute;
+        top:0%;
+        left: 0;
+        width:100%;
+        align-items: flex-start;
+        padding:20px 60px;
+        text-align:left;
+    }
+    .bg-11 div span{
+        display: block;
+        margin:20px 0;
+        width:40%;
+        /* border:2px solid black; */
+    }
+    .bg-11 div span h4,
+    .bg-11 div span .circle{
+        margin:10px 0px;
+    }
+    .bg-11 div span .circle{
+        align-items: center;
+    }
+    .bg-11 #marginUp{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width:100%;
+        position: relative;
+        flex-direction: column;
+        text-align: left;
+        padding:40px 0 20px 50px;
+        margin:-350px 0 0;
+    }
+    .bg-11 #marginUp h4{
+        margin:10px 0;
+    }
+    .bg-11 #marginUp p{
+        width:60%;
+        position: absolute;
+        right:20px;
+        top:50px;
+    }
+    .bg-13{
+        justify-content: center;
+    }
+    .bg-13 img{
+        width:40%;
+    }
+    .bg-14 .btnCont{
+        /* border:2px solid black; */
+        width:35%;
+    }
+    .bg-24 .btnCont button{
+        width:100%;
+    }
+    footer{
+        flex-direction: row;
+    }
 }
