@@ -16,6 +16,7 @@ let section = document.querySelector(".bg")
 }
 
 menu.addEventListener("click", hide)
+<<<<<<< HEAD
 close.addEventListener("click", hide);
 
 // function disappear(){ 
@@ -59,3 +60,8 @@ for(let i = 0; i < sections.length; i++){
     }
     sections[i].addEventListener("scroll", each)
 }
+=======
+// modal.addEventListener("click", hide)
+close.addEventListener("click", hide);
+console.log(body.scrollHeight)
+>>>>>>> f1a21e2ca8373196835acbe3a0e5baf4b4b2beb1
