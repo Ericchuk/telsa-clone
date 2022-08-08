@@ -1,4 +1,5 @@
 So i decided to clone telsa as i have done before but not on this repository.
 It was difficult getting the font-family, still haven't gotten it.
 Color and background color were also difficult to find to i just pick colors that are closer but no it.
-Tomorrow i will be trying the animation aspect of the webpage, slidefromcenter, and see how well it will respond then create the menu section and move to javascript for interactivity of the page.. 
+Tomorrow i will be trying the animation aspect of the webpage, slidefromcenter, and see how well it will respond then create the menu section and move to javascript for interactivity of the page..
+Today being another day to make progress after the weekend, I tried working on the interactivity using javascript for animation but i cound not get a grasp of it, I dont nt to use a framework at the moment i want it to be pure javascript. I checked a tutorial and tried implementing what i learnt but it didn't work (I tried using the scrollbar as an event Listener, it didn't give me the required feedback, but using click produced the animation result). I KEEP MOVING REGARDLESS. 

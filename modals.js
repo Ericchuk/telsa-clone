@@ -23,3 +23,14 @@ close.addEventListener("click", hide);
 
 console.log(body.scrollHeight)
 // export {body} from "module";
+
+let button = document.querySelectorAll(".btnContainer button");
+let main = document.querySelector(".plaid")
+// for(let i = 0; i < button.length; i++){
+    function change(){
+        // console.log(main);
+        // main[1].style.display = "flex";
+        main.style.display = "none";
+    }
+    button[0].addEventListener("click", change)
+// }
