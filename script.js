@@ -16,7 +16,6 @@ let section = document.querySelector(".bg")
 }
 
 menu.addEventListener("click", hide)
-<<<<<<< HEAD
 close.addEventListener("click", hide);
 
 // function disappear(){ 
@@ -27,41 +26,39 @@ close.addEventListener("click", hide);
 //     }
 // }
 
-    let content = document.querySelector(".bg");
+//     let content = document.querySelector(".bg");
  
-    let h1 = document.querySelector("h1");
-    let contentPosition = content.getBoundingClientRect();
-    let screenPosition = window.innerHeight;
-// window.addEventListener('click', ()=>{
+//     let h1 = document.querySelector("h1");
+//     let contentPosition = content.getBoundingClientRect();
+//     let screenPosition = window.innerHeight;
+// // window.addEventListener('click', ()=>{
 
-//     if(contentPosition < screenPosition){
-//         // alert("Hey man");
-//         h1.classList.add("active");
-//     }else{
-//         alert("cddcd")
+// //     if(contentPosition < screenPosition){
+// //         // alert("Hey man");
+// //         h1.classList.add("active");
+// //     }else{
+// //         alert("cddcd")
+// //     }
+// // });
+// // console.log(contentPosition,screenPosition) 
+// // window.onscroll = function() {myFunction()};
+
+// // function myFunction() {
+// //   if (contentPosition > screenPosition) {
+// //     alert("aaa")
+// //   } else {
+// //     alert("bbb")
+// //   }
+// // }
+
+// let sections = document.querySelectorAll(".bg");
+
+// for(let i = 0; i < sections.length; i++){
+//     function each(){
+//         console.log("aaa")
 //     }
-// });
-// console.log(contentPosition,screenPosition) 
-// window.onscroll = function() {myFunction()};
-
-// function myFunction() {
-//   if (contentPosition > screenPosition) {
-//     alert("aaa")
-//   } else {
-//     alert("bbb")
-//   }
+//     sections[i].addEventListener("scroll", each)
 // }
-
-let sections = document.querySelectorAll(".bg");
-
-for(let i = 0; i < sections.length; i++){
-    function each(){
-        console.log("aaa")
-    }
-    sections[i].addEventListener("scroll", each)
-}
-=======
-// modal.addEventListener("click", hide)
-close.addEventListener("click", hide);
-console.log(body.scrollHeight)
->>>>>>> f1a21e2ca8373196835acbe3a0e5baf4b4b2beb1
+// // modal.addEventListener("click", hide)
+// close.addEventListener("click", hide);
+// console.log(body.scrollHeight)
