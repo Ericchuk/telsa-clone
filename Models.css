@@ -79,7 +79,7 @@ li{
     width:100%;
     height: 260vh;
     background-color: var(--primary);
-    position: absolute;
+    position: fixed;
     left: 0;
     top:0;
     z-index: 3;
@@ -97,12 +97,13 @@ li{
     top:0px;
     right: 0%;
     overflow-y: scroll;
+    z-index: 4;
     /* display: none; */
 }
 ul li{
     border-radius: 10px;
 }
-ul li:hover{
+li:hover{
     background-color: var(--bg);
 }
 .navContainer nav .closeContainerx{
@@ -173,6 +174,7 @@ section.bg-1{
     width: 100%;
     height: 100vh;
     z-index: 1;
+    position: relative;
     box-shadow: inset 0px -150px 50px black;
 }
 .bg-1 h1{
@@ -208,7 +210,8 @@ section.bg-1{
     margin:10px 0;
     color:var(--secondary);
 }
-.forDesktop{
+.forDesktop,
+.forDesktopBg{
     display: none;
 }
 .bg-1 button{
@@ -271,6 +274,13 @@ section.bg-1{
 .bg-3 .desc{
     padding:20px 20px;
 }
+.bg-3 main:nth-child(2) .desc:nth-child(2) {
+    /* border:2px solid red; */
+    /* width:auto; */
+    padding:20px;
+    margin:0;
+
+}
 .bg-3 #last p{
     padding:10px 0px 40px;
 }
@@ -298,7 +308,7 @@ section.bg-1{
     background-size: cover;
 }
 .bg-4 .blueAreaFlexed div{
-    width:20%;
+    /* width:20%; */
     margin:0 10px;
     display: flex;
     justify-content: space-between;
@@ -775,21 +785,24 @@ button{
 }
 .unplaid{
     display: none;
+    width: 100%;
+}
+.bg-13 aside .unplaid div .span{
+    margin:20px 100px 0 0;
 }
 .bg-13 aside main{
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
     position: relative;
-
+    width:100%;
 }
 .bg-13 aside main div{
-    width:45%;
     margin:10px 10px 0 0;
 }
 .bg-13 aside main div .span{
-    margin:20px 0;
-    width: auto;
+    margin:20px 20px;
+    width: 60%;
 }
 .bg-13 aside main div h4{
     font-size: 15px;
@@ -1074,6 +1087,9 @@ footer a{
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
+        background-color: var(--secondary);
+        z-index: 3;
+        position: relative; 
     }
     .bg-11 #marginUp{
         /* border:2px solid green; */
@@ -1096,9 +1112,10 @@ footer a{
     }
     .bg-13 .btnContainer{
         justify-content: center;
+        width: 80%;
     }
     .btnContainer button{
-        width:100%;
+        width:50%;
         text-align: center;
     }
     .bg-14{
@@ -1111,6 +1128,9 @@ footer a{
         width:50%;
         padding:0 30px;
         text-align: left;
+    }
+    .bg-14 .btnCont h2{
+        width:100%;
     }
     .bg-14 .btnCont button{
         width:60%;
@@ -1125,7 +1145,8 @@ footer a{
     .forDesktop{
         display: block;
     }
-    .forMobile{
+    .forMobile,
+    .forDesktopBg{
         display:none;
     }
     section.bg-1{
@@ -1227,6 +1248,23 @@ footer a{
         width:44%;
         margin:30px 50px 0 0;
     }
+    .bg-7 aside main:nth-child(2) div:nth-child(2){
+        /* border:2px solid forestgreen; */
+        margin:0;
+    }
+    .bg-7 aside main:nth-child(2) div:nth-child(2) h3{
+        width:70%;
+    }
+    .bg-7 aside main:nth-child(2) div:nth-child(2) p{
+        width:70%;
+        padding:0;
+        margin:0;
+    }
+    .bg-7 aside main div:nth-child(2) p{
+        width:70%;
+        padding:0;
+        margin:0;
+    }
     .bg-7 #overlayImg{
         margin:-140px 0 0;
         display: flex;
@@ -1246,7 +1284,7 @@ footer a{
     }
     .bg-8{
         display: flex;
-        justify-content: space-around;
+        justify-content:center;
         align-items: center;
         background-color: black;
         width:100%;
@@ -1257,7 +1295,7 @@ footer a{
         padding:0;
     }
     .bg-8 video{
-        width:auto;
+        width:100%;
         margin:0;
         padding:0;
         margin-bottom: -5px;
@@ -1265,7 +1303,7 @@ footer a{
         /* border:2px solid red; */
     }
     .bg-8 #side{
-        width:40%;
+        width:45%;
         height: 500px;
         padding:20px 20px;
         background-color: var(--secondary);
@@ -1282,6 +1320,9 @@ footer a{
         justify-content: flex-start;
         top:70%;
         width:70%;
+    }
+    .bg-8 aside.overlay .overlayItems{
+        width: 25%;
     }
     .bg-8 .overlay h4{
         width:100%;
@@ -1378,4 +1419,97 @@ footer a{
     footer{
         flex-direction: row;
     }
+}
+
+@media screen and (min-width:1300px) {
+    .navContainer .modalNav{
+        display: none;
+    }
+    .navContainer nav nav.centered{
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        width:93%;
+        /* border:2px solid black; */
+    }
+    .navContainer nav nav.centered ul{
+        position: absolute;
+        right: 0;
+        display: flex;
+    }
+    .navContainer nav nav.centered li{
+        margin:0px 10px 0 0;
+        padding:8px;
+        border-radius: 10px;
+    }
+    .navContainer .modalNav ul .firstLi,
+    .navContainer .modalNav ul li:nth-child(2),
+    .navContainer .modalNav ul li:nth-child(3),
+    .navContainer .modalNav ul li:nth-child(4),
+    .navContainer .modalNav ul li:nth-child(5),
+    .navContainer .modalNav ul li:nth-child(6),
+    .navContainer .modalNav ul li:nth-child(7){
+        position: absolute;
+        top:0;
+        margin:0;
+        display: none;
+    }
+    .navContainer .modalNav ul li:nth-child(8){
+        margin:100px 20px 0;
+    }
+    .bg-3{
+        padding:30px 50px;
+    }
+    .bg-3 main p{
+        width:70%;
+    }
+    .bg-3 main:nth-child(1) .desc,
+    .bg-3 main:nth-child(3) .desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .bg-3 main:nth-child(1) .desc h4,
+    .bg-3 main:nth-child(3) .desc h4{
+        width:70%;
+    }
+    .bg-7 aside{
+        padding:30px 50px;
+    }
+    .bg-11{
+        overflow-y: hidden;
+    }
+    .bg-11 img{
+        margin:-500px 0 0;
+    }
+    .bg-11 #marginUp{
+        margin:-500px 0 0;
+        /* border:2px solid black; */
+    }
+    .bg-11 div span .circle{
+        width:20px;
+    }
+    .bg-14 .btnCont{
+        display: flex;
+        flex-wrap: wrap;
+        width:50%;
+    }
+    .bg-14 .btnCont button{
+        width:47%;
+        margin:0 10px 0 0;
+    }
+}
+/* CLASSLIST */
+.show{
+    display: flex;
+}
+.remove{
+    display: none;
+}
+.btn{
+    border:3px solid lightgray;
 }

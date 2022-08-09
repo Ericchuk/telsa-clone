@@ -25,12 +25,26 @@ console.log(body.scrollHeight)
 // export {body} from "module";
 
 let button = document.querySelectorAll(".btnContainer button");
-let main = document.querySelector(".plaid")
-// for(let i = 0; i < button.length; i++){
-    function change(){
-        // console.log(main);
-        // main[1].style.display = "flex";
-        main.style.display = "none";
+button[1].style.border =  "3px solid gray";
+button[1].style.color = "grey";
+let plaid = document.querySelector(".plaid")
+let unplaid = document.querySelector(".unplaid")
+    function change(){  
+        unplaid.classList.remove("show");
+        plaid.classList.remove("remove")
+        button[0].style.border =  "3px solid #fff";
+        button[1].style.border =  "3px solid gray";
+        button[1].style.color = "grey";
+        button[0].style.color = "#fff";
     }
-    button[0].addEventListener("click", change)
-// }
+
+    function change2(){  
+        plaid.classList.add("remove")
+        unplaid.classList.add("show");
+        button[0].style.border =  "3px solid gray";
+        button[1].style.border =  "3px solid #fff";
+        button[0].style.color = "grey";
+        button[1].style.color = "#fff";
+    }
+    button[0].addEventListener("click", change);
+    button[1].addEventListener("click", change2)
