@@ -14,6 +14,13 @@ img{
 a{
     color:white;
 }
+ul li{
+    padding:5px;
+    border-radius: 10px;
+}
+ul li:hover{
+    background-color: lightgray;
+}
 li{
     list-style: none;
 }
@@ -71,12 +78,14 @@ button:hover{
 .header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding:20px;
     position: absolute;
     width: 100%;
     color: white;
     z-index: 3;
+    /* border:2px solid red; */
+    height:100vh;
 }
 .header svg{
     width:150px;
@@ -88,16 +97,30 @@ button:hover{
     left: 0;
     width:100%;
     background-color: rgba(0, 0, 0, 0.629);
-    /* display: flex; */
+    display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
-    /* z-index: 3; */
+    z-index:3;
+    /* height:200vh; */
 }
 .navContent ul{
     border:3px solid white;
     background-color: white;
-    width: 80%;
+    width: 60%;
+    padding:0px 20px;
+    overflow-y: hidden;
+}
+.navContent ul.firstOne{
+    padding:30px 20px 0;
+}
+.navContent ul a{
+    color:black;
+    padding:5px 10px;
+    text-decoration: none;
+}
+.navContent ul img{
+    width:3%;
 }
 
 /* SECTION 1    */
@@ -110,6 +133,7 @@ button:hover{
     width:100%;
     color:white;
     position: relative;
+    z-index: -1;
     /* border:2px solid green; */
 }
 .section1 h1{
@@ -419,6 +443,9 @@ button:hover{
 .sectionAside5{
     background-image: url(images/Autopilot-Hero-Vision-Mobile.jpeg);
 }
+.section1.sectionAside6{
+    background-image: url(images/Autopilot-Hero-Vision-Mobile.jpeg);
+}
 .sectionAside{
     color:white;
     justify-content: space-between;
@@ -445,11 +472,17 @@ button:hover{
     margin:10px 0;
     line-height: 1.6rem;
 }
+.sectionAside5 h3{
+    color: black;
+}
+.sectionAside5 p{
+    color: black;
+}
 #marginSide h4{
     font-size: 21px;
     margin:0px 0 5px;
 }
-.sectionAside6{
+.section1.sectionAside6{
     background-image: url(images/modal3Images/Model-3-Interior-Hero-Mobile-LHD.jpeg);
 }
 .sectionAside6 .sectionAside{
@@ -689,7 +722,10 @@ footer{
 footer a{
     margin:10px 0;
 }
-.forMoblile{
+.forDesktop{
+    display: none;
+}
+.forDesktopbg{
     display: none;
 }
 @media screen and (min-width:700px) {
@@ -707,13 +743,31 @@ footer a{
     }
     .sectionAside2{
         background-image: url(images/modal3Images/Model-3-Performance-Hero-Mobile-LHD.jpeg);
+        height:50vh;
     }
     .sectionAside3{
         background-image:url(images/modal3Images/Model-3-AWD-Hero-Mobile-LHD.jpeg) ;
         margin:-10px 0 0 ;
+        height:50vh;
     }
     .sectionAside4{
         background-image: url(images/modal3Images/Model-3-Range-Hero-Mobile-LHD.jpeg);
+        height:60vh;
+        padding:0 0 30px;
+    }
+    .sectionAside5{
+        background-image: url(images/modal3Images/Autopilot-Hero-Vision-Mobile.jpeg);
+        height: 60vh;
+        color: black;
+    }
+    .sectionAside5 h3{
+        color: black;
+    }
+    .sectionAside5 p{
+        color: black;
+    }
+    .sectionAside6{
+        height: 60vh;
     }
     .sectionAside{
         justify-content: center;
@@ -764,8 +818,174 @@ footer a{
     #paddedSide button{
         width:auto;
     }
-    .sectionAside4{
-        height:160vh;
+    .flexBottom main{
+        flex-direction: space-between;
+        margin:20px 0;
+    }
+    .flexBottom main div{
+        width:60%;
+    }
+    .positionedText {
+        height:70vh;
+        margin:20px 0;
+    }
+    .LearnMoreBlackBg main{
+        display: block;
+    }
+    .LearnMoreBlackBg main img{
+        width:100%;
+    }
+    .LearnMoreBlackBg main:nth-child(3) img{
+        width:100%;
+    }
+    .modelContent h2{
+        margin:5px 30px 20px;
+    }
+    .pos{
+        height:80vh;
+    }
+    .premiumContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .premiumContent main:first-child{
+        width:70%;
+    }
+    .premiumContent main:not(:first-child){
+        width:50%;
+    }
+    .sided{
+        /* width:70%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+    .sided main{
+        width:80%;
+    }
+    .lastSection{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .footerSection{
+        /* border:2px solid green; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footerSection aside{
+        width:50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        /* border:2px solid red; */
+        padding:0 20px;
+    }
+    .footerSection .oppBtn{
+        width: 70%;
+    }
+    .footerSection img{
+        width:50%;
+    }
+    .footerSection aside h2{
+        text-align: left;
+    }
+    .footerSection p{
+        width:100%;
+        padding:10px 20px;
+    }
+    footer{
+        flex-direction: row;
+    }
+    footer a{
+        margin:3px;
+        padding: 5px;
+    }
+}
+@media screen and (min-width:1300px) {
+
+    .sectionAside2,
+    .sectionAside3,
+    .sectionAside4,
+    .sectionAside5,
+    .sectionAside6{
+        height:100vh;
+    }
+    .pos{
+        height:130vh;
+    }
+    .blackCar{
+        width:40%;
+    }
+    #learnMore aside{
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    #learnMore .LearnMoreBlackBg{
+        display: block;
+    }
+    #learnMore .LearnMoreBlackBg div{
+        display: flex;
+        flex-direction: row;
+    }
+    .section1 .sectionAside{
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 .sectionAside button{
+        width:20%;
+        margin:0 0 30px;
+    }
+    .section1 .sectionAside div{
+        width:20%;
         padding:0 0 30px;
+    }
+    .navContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navContent{
+        display: none;
+    }
+    .navContent ul{
+        border:3px solid white;
+        background-color: white;
+        width: 20%;
+        padding:0px 20px;
+        overflow-y: hidden;
+    }
+    .firstOne{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .firstOne a{
+        padding:4px;
+        margin: 0 5px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .firstOne a:hover{
+        background-color: lightgray;
+    }
+    .angled{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .angled li{
+        cursor: pointer;
+    }
+    .angled a{
+        list-style-type: none;
     }
 }
