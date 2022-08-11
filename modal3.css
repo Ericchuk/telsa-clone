@@ -1,6 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x:hidden;
+}
+img{
+    width:100%;
+}
+a{
+    color:white;
+}
+li{
+    list-style: none;
+}
+h2{
+    font-size: 25px;
+    margin:5px 0 20px;
+    font-weight: 500;
+    text-align: left;
+    width:100%;
+}
+h3{
+    font-size: 25px;
+}
+h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+h6{
+    font-size: 16px;
+    margin:20px 0 3px;
+}
+p{
+    font-size: 14px;
+}
+button{
+    padding:10px 50px;
+    background-color: transparent;
+    border:3px solid black;
+    font-weight: 600;
+    /* color: white; */
+    border-radius: 100px;
+    width:90%;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.oppBtn{
+    border:3px solid white;
+    color:white;
+}
+.oppBtn:hover{
+    border:3px solid black;
+    background-color: white;
+    color:black;
+}
+.plus,
+.closeIcon{
+    width: 40px;
+    border:3px solid black;
+    padding:2px;
+    border-radius: 100px;
+    margin:0 10px 0 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 3;
+}
+.header svg{
+    width:150px;
+}
+.navContent{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.629);
+    /* display: flex; */
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    /* z-index: 3; */
+}
+.navContent ul{
+    border:3px solid white;
+    background-color: white;
+    width: 80%;
+}
+
+/* SECTION 1    */
+.section1{
+    background-image:url(images/modal3Images/Model-3-Main-Hero-Mobile-LHD.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width:100%;
+    color:white;
+    position: relative;
+    /* border:2px solid green; */
+}
+.section1 h1{
+    font-size: 40px;
+    width:100%;
+    /* border:2px solid green; */
+    text-align: center;
+    padding-top:70px;
+}
+.sectionAside{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    padding:10px 20px;
+}
+.sectionAside div{
+    width:30%;
+}
+.sectionAside button{
+    width: 100%;
+    margin:20px 0 10px;
+}
+#section2{
+    position: relative;
+}
+.imContainer-analysisText{
+    position: relative;
+}
+/* TEXT THAT SHOWS THE ANALYSISES OF THE VEHICLE PART  */
+.positionedText{
+    position: absolute;
+    top:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border:2px solid black; */
+    height: 80vh;
+}
+.positionedText p{
+    font-size: 13px;
+}
+.positionedText p:first-child{
+    /* border:2px solid black; */
+    position: absolute;
+    top:25vw;
+    margin:0 0 0 10%;
+}
+ /* DRAWING OF LINE AND DOT HEAD  */
+.positionedText p:first-child::after{
+    content: "";
+    height: 130px;
+    width:2px;
+    position: absolute;
+    background-color: black;
+    margin: 0 0 0 5px;
+}
+.positionedText p:first-child::before{
+    content: "";
+    height: 5px;
+    width:5px;
+    position: absolute;
+    top:130px;
+    right: -9px;
+    z-index:3;
+    background-color: white;
+    margin: 0 0 0 5px;
+    border-radius: 100px;
+    border:1px solid black;
+}
+.positionedText p:nth-child(2){
+    /* border:2px solid black; */
+    position: absolute;
+    top:10px;
+    margin:0 0 0 70%;
+}
+.positionedText p:nth-child(2)::after{
+    content: "";
+    height: 80px;
+    width:2px;
+    position: absolute;
+    background-color: black;
+    margin: 0 0 0 5px;
+}
+.positionedText p:nth-child(2)::before{
+    content: "";
+    height: 5px;
+    width:5px;
+    position: absolute;
+    top:80px;
+    right: -9px;
+    z-index:3;
+    background-color: white;
+    margin: 0 0 0 5px;
+    border-radius: 100px;
+    border:1px solid black;
+}
+.positionedText p:nth-child(3){
+    /* border:2px solid black; */
+    position: absolute;
+    top:auto;
+    bottom:70px;
+    margin:0 0 0 65%;
+    width: 20%;
+    text-align: right;
+}
+.positionedText p:nth-child(3)::after{
+    content: "";
+    height: 120px;
+    width:2px;
+    position: absolute;
+    top:-90px;
+    background-color: black;
+    margin: 0 0 0 5px;
+}
+.positionedText p:nth-child(3)::before{
+    content: "";
+    height: 5px;
+    width:5px;
+    position: absolute;
+    top:-90px;
+    right: -9px;
+    z-index:3;
+    background-color: white;
+    margin: 0 0 0 5px;
+    border-radius: 100px;
+    border:1px solid black;
+}
+.analysisVehicle{
+    width: 100%;
+}
+#paddedTop{
+    padding:30px 0 10px;
+}
+#paddedSide{
+    padding:0px 20px 0;
+}
+#learnContainer,
+#learnContainer span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#learnContainer{
+    margin:30px 0 30px;
+    padding:0 20px;
+}
+#learnMore{
+    /* border:2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding:160px 0 60px;
+}
+#learnMore h2{
+    margin:10px 0;
+}
+#learnMore .illustrationClass{
+    padding:50px 0;
+}
+#learnMore .imgContainer{
+    position: absolute;
+    top:270px;
+    height: 35vh;
+    width:100%;
+    /* border:2px solid red; */
+}
+#learnMore .imgContainer p{
+    color: white;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.628);
+    padding: 4px 8px;
+    border-radius: 100px;
+}
+#learnMore .imgContainer p:first-child{
+    position: absolute;
+    top:90px;
+    left:80px;
+}
+#learnMore .imgContainer p:nth-child(2){
+    position: absolute;
+    top:50px;
+    left:155px;
+}
+#learnMore .imgContainer p:nth-child(3){
+    position: absolute;
+    top:auto;
+    bottom:55px;
+    right:110px;
+}
+#learnMore ul{
+    padding:20px 30px;
+}
+#learnMore ul li p:first-child{
+    margin:0 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.628);
+    padding:1px 7px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+#learnMore ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#learnMore button{
+    margin:20px;
+    width: 90%;
+}
+#learnMore .closeIcon{
+    width:35px;
+    padding:5px;
+    margin:20px 0 0;
+}
+.sectionAside2{
+    background-image: url(images/modal3Images/Model-3-Performance-Hero-Mobile-LHD.jpeg);
+}
+.sectionAside3{
+    background-image:url(images/modal3Images/Model-3-AWD-Hero-Mobile-LHD.jpeg) ;
+    margin:-10px 0 0 ;
+}
+.sectionAside4{
+    background-image: url(images/modal3Images/Model-3-Range-Hero-Mobile-LHD.jpeg);
+}
+.sectionAside3 div{
+    width:30%;
+    margin:0 5px;
+}
+.sectionAside{
+    justify-content: center;
+    width:100%;
+    padding:0;
+}
+.sectionAside div img{
+    border:none;
+}
+.LearnMoreBlackBg{
+    background-color: black;
+    color: white;
+    padding:150px 0 30px;
+}
+.LearnMoreBlackBg main div{
+    margin:70px 0 50px;
+}
+.LearnMoreBlackBg main div p{
+    font-size: 16px;
+}
+.LearnMoreBlackBg .closeIconW{
+    width:40px;
+    margin:20px 0;
+}
+#paddedSide h2{
+    margin:0px 0 10px;
+}
+#paddedSide h5{
+    padding:40px 0 0;
+}
+#paddedSide button{
+    width:100%;
+    margin:50px 0 70px;
+}
+.sectionAside4 .sectionAside div{
+    width:30%;
+}
+#learnMore .mapContainer{
+    /* display: flex; */
+    position: relative;
+}
+#marginSide{
+    margin:10px 20px;
+    padding:10px 0;
+}
+.borderTop{
+    border-top:2px solid black;
+}
+.flexBottom main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.flexBottom main h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+.flexBottom main div{
+    border:3px solid black;
+    width:70%;
+    margin:30px 30px 0 0;
+    position: relative;
+    padding:20px;
+}
+.flexBottom main div p:last-child{
+    position: absolute;
+    bottom: 10px;
+}
+.flexBottom button{
+    position: relative;
+    top:65px;
+}
+.sectionAside5{
+    background-image: url(images/Autopilot-Hero-Vision-Mobile.jpeg);
+}
+.sectionAside{
+    color:white;
+    justify-content: space-between;
+}
+.sectionAside div{
+    width:26%;
+}
+.sectionAside5 .sectionAside h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+.sectionAside p{
+    font-size: 13px;
+}
+.lens{
+    width:35px;
+}
+.greyBg{
+    background-color: rgba(211, 211, 211, 0.117);
+    padding:90px 20px ;
+}
+.greyBg p{
+    font-size: 17px;
+    margin:10px 0;
+    line-height: 1.6rem;
+}
+#marginSide h4{
+    font-size: 21px;
+    margin:0px 0 5px;
+}
+.sectionAside6{
+    background-image: url(images/modal3Images/Model-3-Interior-Hero-Mobile-LHD.jpeg);
+}
+.sectionAside6 .sectionAside{
+    color: white;
+}
+.sectionAside6{
+    background-color: black;
+    /* border:2px solid red; */
+}
+.LearnMoreBlackBg main p{
+    font-size: 17px;
+    padding:10px 20px;
+}
+.LearnMoreBlackBg p{
+    margin:20px 0 50px;
+}
+.LearnMoreBlackBg div main .borderTop{
+    border-color: white;
+}
+.LearnMoreBlackBg div main #marginSide p{
+    padding:0;
+}
+.lastSection{
+    margin:-15px 0 0;
+}
+.lastSection .modelContent{
+    padding:20px 0;
+}
+.lastSection .sized{
+    width:45%;
+    padding:5px;
+    margin:10px 10px 10px 0;
+    
+}
+.lastSection .greyBorder{
+    border:3px solid grey;
+}
+.lastSection .lastBtn{
+    background-color: white;
+    color: #000;
+}
+.lastSection .modelContent aside{
+    margin:40px 0 50px;
+    /* border:2px solid red; */
+    /* background-color: red;
+    position: absolute; */
+}
+.lastSection .modelContent #performance,
+.lastSection .modelContent #rear,
+.lastSection .modelContent #long,
+.lastSection .modelContent #extended{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:0 20px;
+}
+.lastSection hr{
+    width:35px;
+    margin:0 0 10px;
+}
+.lastSection .modelContent aside div{
+    width: 100%;
+}
+.lastSection .modelContent aside div span{
+    width:100%;
+    /* border:2px solid red; */
+    display: block;
+}
+.lastSection .modelContent h5{
+    margin:0;
+    padding:0;
+    font-size:18px;
+    font-weight: 600;
+}
+.lastSection .modelContent span p{
+    margin:0;
+    padding:10px 0 20px;
+    font-size:15px;
+    font-weight: 300;
+}
+.pos{
+    position: relative;
+    width:100%;
+    height:135vh;
+    /* background-color: green; */
+}
+.pos aside{
+    position: absolute;
+    background-color: black;
+}
+.lastSection .modelContent #compare{
+    display: none;
+}
+.lastSection .modelContent #compare h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding:0 20px;
+}
+.lastSection .modelContent #compare .imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    /* border:2px solid green; */
+    height:40vh;
+}
+.lastSection .modelContent #compare .imgContainer img{
+    position: absolute;
+    /* border:2px solid green; */
+}
+.lastSection .modelContent #compare .imgContainer img:nth-child(1){
+    left:-65px;
+}
+.lastSection .modelContent #compare .imgContainer img:nth-child(2){
+    left:50px;
+    /* z-index:3; */
+}
+.lastSection .modelContent #compare .imgContainer img:nth-child(3){
+    left:160px;
+}
+.lastSection .modelContent aside div{
+    padding:0 20px;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+div.firstSection span h4{
+    font-size: 15px;
+}
+.sections span{
+    /* padding:0 20px; */
+}
+.sections span h4{
+    font-size: 28px;
+}
+.sections p{
+    color: lightgray;
+}
+.sectionsHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 0;
+    padding:20px;
+}
+.sectionsHead h3{
+    font-size: 15px;
+    margin:0 10px 0 0;
+}
+.sectionsHead hr{
+    width: 65%;
+    /* border:2px solid green; */
+    margin:0;
+    padding:0;
+}
+.included hr{
+    width:70%;
+}
+.included p{
+    width: 80%;
+    /* border:2px solid green; */
+}
+#expand{
+    padding:0 20px;
+}
+#extended{
+    flex-direction: column;
+    justify-content: center;
+    margin:20px 0 40px;
+    /* border:2px solid red; */
+}
+#extended div{
+    padding:0;
+    margin:15px 0;
+}
+#extended h4{
+    margin:10px 0;
+}
+#extended p{
+    margin:10px 0;
+}
+.lineContainer{
+    height:300px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* border:2px solid red; */
+}
+.line{
+    height:220px;
+    width:1px;
+    background-color: grey;
+}
+.manual{
+    width:100%;
+}
+.ownerManual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footerSection{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footerSection aside{
+    width:100%;
+}
+.footerSection h2{
+    width:100%;
+    text-align: center;
+}
+.footerSection aside button{
+    width:90%;
+    margin:10px 0;
+}
+.footerSection aside button.first{
+    background-color: white;
+    color:black;
+}
+.footerSection img{
+    padding:40px 20px 120px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    padding:30px 0;
+}
+footer a{
+    margin:10px 0;
+}
+.forMoblile{
+    display: none;
+}
+@media screen and (min-width:700px) {
+    #learnMore button{
+        width:30%;
+    }
+    .forDesktop{
+        /* display: none; */
+    }
+    .analysisVehicle{
+        display: none;
+    }
+    .section1{
+        background-image: url(images/Model-S-Main-Hero-Desktop-LHD.jpeg);
+    }
+    .sectionAside2{
+        background-image: url(images/modal3Images/Model-3-Performance-Hero-Mobile-LHD.jpeg);
+    }
+    .sectionAside3{
+        background-image:url(images/modal3Images/Model-3-AWD-Hero-Mobile-LHD.jpeg) ;
+        margin:-10px 0 0 ;
+    }
+    .sectionAside4{
+        background-image: url(images/modal3Images/Model-3-Range-Hero-Mobile-LHD.jpeg);
+    }
+    .sectionAside{
+        justify-content: center;
+    }
+    #learnContainer button{
+        width:auto;
+    }
+    #learnContainer{
+        justify-content: flex-start;
+    }
+    #learnContainer span{
+        margin:0 20px 0 0;
+    }
+    .centered h2,
+    .centered p#paddedSide,
+    .centered ul,
+    .centered button{
+        width:70%;
+    }
+    .LearnMoreBlackBg main{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin:0;
+        padding:0;
+    }
+    .sec3 #paddedTop{
+        padding:0;
+    }
+    .LearnMoreBlackBg main img{
+        width:82%;
+    }
+    .LearnMoreBlackBg main:nth-child(1) img{
+        width:100%;
+    }
+    .LearnMoreBlackBg main div{
+        margin:0;
+    }
+    .LearnMoreBlackBg main:nth-child(3) img{
+        width:63%;
+    }
+    .LearnMoreBlackBg main:nth-child(2) #paddedSide{
+        order:2;
+    }
+    .LearnMoreBlackBg main #paddedSide p{
+        padding:0;
+    }
+    #paddedSide button{
+        width:auto;
+    }
+    .sectionAside4{
+        height:160vh;
+        padding:0 0 30px;
+    }
 }

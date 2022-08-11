@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal3</title>
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="./images/download.jpeg">
     <link rel="stylesheet" href="modal3.css">
 </head>
 <body>
-    <header>
-        <header class="navContainer">
+        <header class="header">
             <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z" fill="currentColor"></path></svg>
             <nav class="navContainer">
-                <ul>
+                <ul class="navContent">
                     <ul>
                         <a href="indexModels.html"><li>Model S</li></a>
                         <a href="indexModal3.html"><li>Model 3</li></a>
@@ -47,24 +47,26 @@
                         <a href="#"><li>Semi</li></a>
                         <a href="#"><li>News</li></a>
                     </ul>  
-                    <a href="#"><li></li></a>
-                    <a href="#"><li>
-                        <img src="images/download (1).png" alt="">
-                        <div>
+                    <ul>
+                         <a href="#"><li>
+                          <img src="images/download (1).png" alt="">
+                          <div>
                             <a href="#"><h5>United States</h5></a>
                             <a href="#"><p>English</p></a>
-                        </div>
-                    </li></a>
+                          </div>
+                       </li></a>
+                    </ul>
+                   
 
                 </ul>
                 <ul>
                     <li class="hamburger">Menu</li>
                 </ul>
             </nav>
-    </header>
-    <section>
+        </header>
+    <section class="section1">
         <h1>Model 3</h1>
-        <aside>
+        <aside class="sectionAside">
             <div>
                 <h3>3.1 s</h3>
                 <p>0-60 mph<sup>*</sup></p>
@@ -77,41 +79,72 @@
                 <h3>AWD</h3>
                 <p>Dual Motor</p>
             </div>
-            <button>ORDER NOW</button>
+            <button class="oppBtn">ORDER NOW</button>
         </aside>
     </section>
 
-    <section>
-        <img src="images/modal3Images/model-3-hero-a-mobile.jpeg" alt="sfetyAnalysisVehicle">
-        <aside>
-            <h5>Safety</h5>
-            <h2>Built for Safety</h2>
-            <p>Safety is the most important part of every Tesla. We design our vehicles to <a href="#">exceed safety standards.</a></p>
-            <h6>5-Star Rating</h6>
-            <p>Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
-            <h6>Top Safety Pick+</h6>
-            <p>Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
+    <section id="section2">
+        <div class="imContainer-analysisText">
+            <img src="images/modal3Images/model-3-hero-a-mobile.jpeg" alt="safety Analysis Vehicle" class="analysisVehicle forMobile">
+            <img src="images/modal3Images/model-3-hero-a-desktop.jpeg" alt="analysis car" class="forDesktop">
+            <div class="positionedText">
+                <p>Impact Protection</p>
+                <p>Rigid Structure</p>
+                <p>Very Low Rollover Risk</p>
+            </div>
+        </div>    
+        
+        <aside id="paddedTop">
+            <h5 id="paddedSide">Safety</h5>
+            <h2 id="paddedSide">Built for Safety</h2>
+            <p id="paddedSide">Safety is the most important part of every Tesla. We design our vehicles to <a href="#">exceed safety standards.</a></p>
+            <h6 id="paddedSide">5-Star Rating</h6>
+            <p id="paddedSide">Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
+            <h6 id="paddedSide">Top Safety Pick+</h6>
+            <p id="paddedSide">Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
             <div>
-                <span>
-                    <img src="" alt="">
+                <div id="learnContainer">
+                    <span>
+                        <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                     <p>LEARN MORE</p>
-                </span>
-                <button>ORDER NOW</button>
-                <div id="learnMore">
-                    <h2>Safety-First Design</h2>
-                    <p>Model 3 is built from the ground up as an electric vehicle—with ultra high-strength steel and a low, solid center of gravity.</p>
-                    <img src="images/modal3Images/model_3_safety_drawer_mobile.jpeg" alt="safetyIllustration">
+                    </span>
+                    <button>ORDER NOW</button>
+                </div>
+                
+                <div id="learnMore" class="centered">
+                    <h2 id="paddedSide">Safety-First Design</h2>
+                    <p id="paddedSide">Model 3 is built from the ground up as an electric vehicle—with ultra high-strength steel and a low, solid center of gravity.</p>
+                    <img src="images/modal3Images/model_3_safety_drawer_mobile.jpeg" alt="safetyIllustration" class="illustrationClass">
+                    <div class="imgContainer">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
                     <ul>
-                        <li>Rigid Structure</li>
-                        <p>A material mix of aluminum and steel help to achieve the best structural rigidity, and increased occupant safety.</p>
-                    </ul>
-                    <ul>
-                        <li>Impact Protection</li>
-                        <p>Combined with impact-absorbing rails and center pillar reinforcements, the strength and support of the rigid battery pack provides protection from every side.</p>
-                    </ul>
-                    <ul>
-                        <li>Very Low Rollover Risk</li>
-                        <p>The position and weight of the floor-mounted battery pack provides a very low center of gravity—allowing for a very low rollover risk.</p>
+                        <li>
+                            <p>1</p>
+                            <div>
+                                <h6>  Rigid Structure</h6> 
+                                <p>A material mix of aluminum and steel help to achieve the best structural rigidity, and increased occupant safety.</p>
+                            </div>
+                            
+                        </li>
+                        <li> 
+                            <p>2</p>
+                            <div>
+                                <h6>  Impact Protection</h6> 
+                                <p>Combined with impact-absorbing rails and center pillar reinforcements, the strength and support of the rigid battery pack provides protection from every side.</p>
+                            </div>
+                            
+                        </li>
+                        <li> 
+                            <p>3</p>
+                            <div>
+                                <h6>  Very Low Rollover Risk</h6> 
+                                <p>The position and weight of the floor-mounted battery pack provides a very low center of gravity—allowing for a very low rollover risk.</p>
+                            </div>
+                            
+                        </li>    
                     </ul>
                     <button>ORDER NOW</button>
                     <img src="images/icon-close.svg" alt="closeIcon" class="closeIcon">
@@ -120,8 +153,9 @@
         </aside>
     </section>
 
-    <section>
-        <aside>
+    <section class="sec3">
+        <aside class="section1 sectionAside2">
+          <aside class="sectionAside" >
             <div>
                 <h3>3.1 s</h3>
                 <p>0-60 mph<sup>*</sup></p>
@@ -134,49 +168,57 @@
                 <h3>AWD</h3>
                 <p>Dual Motor</p>
             </div>
+          </aside>
+            
         </aside>
-        <aside>
-            <h5>Performance</h5>
-            <h2>Quickest Acceleration</h2>
-            <p>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
+        <aside id="paddedTop">
+            <h5 id="paddedSide">Performance</h5>
+            <h2 id="paddedSide">Quickest Acceleration</h2>
+            <p id="paddedSide">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
             <div>
-                <span>
-                    <img src="" alt="">
-                    <p>LEARN MORE</p>
-                </span>
-                <button>ORDER NOW</button>
-                <div id="learnMore">
+                <div id="learnContainer">
+                     <span>
+                        <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
+                        <p>LEARN MORE</p>
+                    </span>
+                    <button>ORDER NOW</button>
+                </div>
+                
+                <div id="learnMore" class="LearnMoreBlackBg">
                     <main>
-                        <img src="images/modal3Images/cc960b88-ae42-4fee-81bb-db9e99605ed9.jpeg" alt="rim" class="rim">
-                        <div>
+                        <div id="paddedSide">
                             <h2>20" Überturbine Wheels and Performance Brakes</h2>
                             <p>Includes Pirelli P Zero tires and more powerful brakes for enhanced handling and performance</p>
                         </div>
+                        <img src="images/modal3Images/cc960b88-ae42-4fee-81bb-db9e99605ed9.jpeg" alt="rim" class="rim">
+                      
                     </main>
                     <main>
-                        <img src="images/modal3Images/spoiler.jpeg" alt="backlight" class="backlight">
-                        <div>
+                        <div id="paddedSide">
                             <h2>Carbon Fiber Spoiler</h2>
                             <p>Enhanced aerodynamics and improved stability at speeds up to 162 mph</p>
                         </div>
+                        <img src="images/modal3Images/spoiler.jpeg" alt="backlight" class="backlight">
+
                     </main>
                     <main>
-                        <img src="images/modal3Images/spoiler.jpeg" alt="pedels" class="pedals">
-                        <div>
+                        <div id="paddedSide">
                             <h2>Performance Pedals</h2>
                             <p>Designed with aluminum alloy for enhanced interior styling</p>
                         </div>
+                        <img src="images/modal3Images/211d7e83-c429-4d32-a463-7a64750c8b3e.jpeg" alt="pedels" class="pedals">
                     </main>
-                    <button>ORDER NOW</button>
-                    <img src="images/icon-close.svg" alt="closeIcon" class="closeIcon">
+                    <button class="oppBtn">ORDER NOW</button>
+                    <img src="images/modal3Images/close.svg" alt="closeIcon" class="closeIconW">
                 </div>
             </div>
         </aside>
     </section>
 
-    <section>
-        <aside>
-            <div>
+    <section id="section4">
+        <aside class="section1 sectionAside3">
+          <aside class="sectionAside ">
+             <div>
                 <h3>2</h3>
                 <p>Independent Motors</p>
             </div>
@@ -185,11 +227,13 @@
                 <p>Torque Response</p>
             </div>
             <div>
-                <h3>cloud</h3>
+                <img src="images/modal3Images/cloud.svg" alt="cloud" class="closeIcon">
                 <p>All-Weather control</p>
             </div>
+          </aside>
+           
         </aside>
-        <aside>
+        <aside id="paddedSide" class="pap">
             <h5>All-Wheel Drive</h5>
             <h2>Dual Motor</h2>
             <p>Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel drive systems, they digitally control torque to the front and rear wheels for far better handling and traction control.</p>
@@ -198,112 +242,129 @@
     </section>
 
     <section>
-        <aside>
-            <div>
-                <h3>358 mi</h3>
-                <p>Range (EPA est.)</p>
-            </div>
-            <div>
-                <h3>15 min</h3>
-                <p>Recharge up to 175 mi</p>
-            </div>
-            <div>
-                <h3>35,000+</h3>
-                <p>Global Superchargers</p>
-            </div>
+        <aside class="section1 sectionAside4">
+            <aside class="sectionAside ">
+                <div>
+                    <h3>358 mi</h3>
+                    <p>Range (EPA est.)</p>
+                </div>
+                <div>
+                    <h3>15 min</h3>
+                    <p>Recharge up to 175 mi</p>
+                </div>
+                <div>
+                    <h3>35,000+</h3>
+                    <p>Global Superchargers</p>
+                </div>
+            </aside>
+           
         </aside>
-        <aside>
-            <h5>Range</h5>
-            <h2>Go Anywhere</h2>
-            <p>Model 3 is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 35,000 Superchargers worldwide, with six new locations opening every week.</p>
+        <aside id="paddedTop">
+            <h5 id="paddedSide">Range</h5>
+            <h2 id="paddedSide">Go Anywhere</h2>
+            <p id="paddedSide">Model 3 is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 35,000 Superchargers worldwide, with six new locations opening every week.</p>
             <div>
-                <span>
-                    <img src="" alt="">
-                    <p>LEARN MORE</p>
-                </span>
-                <button>ORDER NOW</button>
+                <div id="learnContainer">
+                    <span>
+                        <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
+                        <p>LEARN MORE</p>
+                    </span>
+                    <button>ORDER NOW</button>
+                </div>
+
                 <div id="learnMore">
-                    <aside>
+                    <aside class="mapContainer">
                      <main class="map">
                         <img src="images/map_berkeley_bg-2x.jpeg" alt="berkeley map">
-                        <div class="borderTop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Berkeley to Lake Tahoe</h4>
                             <h2>178 miles</h2>
                         </div>
                      </main>
                      <main class="map">
                         <img src="images/map_newyork_bg-2x.jpeg" alt="Manhattan map">
-                        <div class="borderTop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Manhattan to Boston</h4>
                             <h2>211 miles</h2>
                         </div>
                      </main>
                      <main class="map">
                         <img src="images//map_florida_bg-2x.jpeg" alt="florida map">
-                        <div class="borderTop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Fort Lauderdale to Orlando</h4>
                             <h2>195 miles</h2>
                         </div>
                      </main>
                      <main class="map">
                         <img src="images//modal3Images/map_austin_bg_mobile.jpeg" alt="austin map">
-                        <div class="borderTop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Austin to Dallas</h4>
                             <h2>195 miles</h2>
                         </div>
                      </main>
-                     <div>
-                        <h2>Supercharge</h2>
-                        <p>Charge for about 30 minutes while you grab a cup of coffee or a quick bite to eat. And with over 35,000 Superchargers placed along well-traveled routes around the world, Model 3 can get you anywhere you want to go.</p>
-                        <main>
+                    </aside>
+                     <div class="flexBottom">
+                        <h2 id="paddedSide">Supercharge</h2>
+                        <p id="paddedSide">Charge for about 30 minutes while you grab a cup of coffee or a quick bite to eat. And with over 35,000 Superchargers placed along well-traveled routes around the world, Model 3 can get you anywhere you want to go.</p>
+                        <main id="paddedSide">
                           <div>
                             <h4>35,000+</h4>
                             <p>Superchargers</p>
                             <p>3,900+ Stations</p>
                           </div>
                           <button>LEARN MORE</button>
+                          
                         </main>
-                      
-                     </div>
-                    </aside>
+                    </div>
                     <button>ORDER NOW</button>
+                    <img src="images/icon-close.svg" alt="closeIcon" class="closeIcon">
                 </div>
             </div>
         </aside>
     </section>
 
     <section>
-        <aside>
-            <div>
-                <h3>360<sup>o</sup></h3>
-                <p>Degrees of Visibility</p>
-            </div>
-            <div>
-                <h3>250 m</h3>
-                <p>of Powerful Visual Processing</p>
-            </div>
-            <div>
-                <h3>Lens</h3>
-                <p>Tesla Vision</p>
-            </div>
+        <aside class="section1 sectionAside5">
+            <aside class="sectionAside">
+                <div>
+                    <h3>360<sup>o</sup></h3>
+                    <p>Degrees of Visibility</p>
+                </div>
+                <div>
+                    <h3>250 m</h3>
+                    <p>of Powerful Visual Processing</p>
+                </div>
+                <div>
+                    <img src="images/modal3Images/lens.svg" alt="lens" class="lens">
+                    <p>Tesla Vision</p>
+                </div> 
+            </aside>
+            
         </aside>
-        <aside>
-            <h5>Autopilot</h5>
-            <h2>Future of Driving</h2>
-            <p>Autopilot's advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.</p>
+        <aside id="paddedTop">
+            <h5 id="paddedSide">Autopilot</h5>
+            <h2 id="paddedSide">Future of Driving</h2>
+            <p id="paddedSide">Autopilot's advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.</p>
             <div>
-                <span>
-                    <img src="" alt="">
-                    <p>LEARN MORE</p>
-                </span>
-                <button>ORDER NOW</button>
+                <div id="learnContainer">
+                    <span>
+                        <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
+                        <p>LEARN MORE</p>
+                    </span>
+                    <button>ORDER NOW</button>
+                </div>
+
                 <div id="learnMore">
                     <aside>
+                        <main class="greyBg">
+                            <h2>Features</h2>
+                            <p>Autopilot enables your car to steer, accelerate and brake automatically within its lane. Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:</p>
+                        </main>
                         <main>
                         <video width="400" height="400" autoplay loop >
                             <source src="images/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4">
                         </video>
-                        <div class="bordertop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Navigate on Autopilot</h4>
                             <p>Active guidance from on-ramp to off-ramp</p>
                         </div>
@@ -312,7 +373,7 @@
                         <video width="400" height="400" autoplay loop >
                             <source src="images/ZZNM9S_summon_1.mp4-2000_OQKCDY.mp4">
                          </video>
-                        <div class="bordertop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Summon</h4>
                             <p>Automatically retrieve your car</p>
                         </div>
@@ -321,7 +382,7 @@
                         <video width="400" height="400" autoplay loop >
                             <source src="images/WM5XUG_parking.mp4-2000_EQUBJE.mp4">
                         </video>
-                        <div class="bordertop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Autopark</h4>
                             <p>Parallel and perpendicular parking with a single touch</p>
                         </div>
@@ -330,7 +391,7 @@
                         <video width="400" height="400" autoplay loop >
                             <source src="images/A7I6LP_lane_change_0.mp4-2000_PYSUF4.mp4">
                         </video>
-                        <div class="bordertop">
+                        <div class="borderTop" id="marginSide">
                             <h4>Auto Lane Change</h4>
                             <p>Automatically change lanes while driving on the highway</p>
                         </div>
@@ -344,31 +405,37 @@
     </section>
 
     <section>
-        <aside>
-            <div>
-                <h3>15 inch</h3>
-                <p>Touchscreen Display</p>
-            </div>
-            <div>
-                <h3>Signal</h3>
-                <p>Over-the-air Software Updates</p>
-            </div>
-            <div>
-                <h3>small car</h3>
-                <p>All-Glass Roof</p>
-            </div>
+        <aside class="section1 sectionAside6">
+            <aside class="sectionAside">
+                <div>
+                    <h3>15 inch</h3>
+                    <p>Touchscreen Display</p>
+                </div>
+                <div>
+                    <img src="images/modal3Images/wifi.svg" alt="wiFi" class="wifi lens">
+                    <p>Over-the-air Software Updates</p>
+                </div>
+                <div>
+                    <img src="images/modal3Images/roof.svg" alt="roof" class="roof lens">
+                    <p>All-Glass Roof</p>
+                </div>
+            </aside>
+            
         </aside>
-        <aside>
-            <h5>Interior</h5>
-            <h2>Built Around the Driver</h2>
-            <p>The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.</p>
+        <aside id="paddedTop">
+            <h5 id="paddedSide">Interior</h5>
+            <h2 id="paddedSide">Built Around the Driver</h2>
+            <p id="paddedSide">The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.</p>
             <div>
-                <span>
-                    <img src="" alt="">
-                    <p>LEARN MORE</p>
-                </span>
-                <button>ORDER NOW</button>
-                <div id="learnMore">
+                <div id="learnContainer">
+                    <span>
+                        <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
+                        <p>LEARN MORE</p>
+                    </span>
+                    <button>ORDER NOW</button>
+                </div>
+
+                <div id="learnMore" class="LearnMoreBlackBg">
                     <aside>
                         <main>
                             <img src="images/modal3Images/Model-3-Interior-Carousel-1-Slide-1-Mobile-LHD.jpeg" alt="carousel1">
@@ -387,34 +454,34 @@
                             <p>The back seat is very comfortable—with maximum legroom and beautiful views through the all-glass roof.</p>
                         </main>
                     </aside>
-                    <aside>
-                        <h2>Better Over Time</h2>
-                        <p>Access everything on the 15-inch touchscreen—designed to improve over time with regular software updates, introducing new features, functionality and performance.</p>
+                    <aside class="LearnMoreBlackBg">
+                        <h2 id="paddedSide">Better Over Time</h2>
+                        <p id="paddedSide">Access everything on the 15-inch touchscreen—designed to improve over time with regular software updates, introducing new features, functionality and performance.</p>
                         <div>
                             <main>
                                 <img src="images/modal3Images/Model-3-Interior-Carousel-2-Slide-2-Mobile-LHD.jpeg" alt="">
-                                <div class="borderTop">
+                                <div class="borderTop" id="marginSide">
                                     <h4>Media</h4>
                                     <p>FM/HD, on-demand or internet radio, and streaming via Premium Connectivity</p>
                                 </div>
                             </main>
                             <main>
                                 <img src="images/modal3Images/Model-3-Interior-Carousel-2-Slide-1-Mobile-LHD.jpeg" alt="">
-                                <div class="borderTop">
+                                <div class="borderTop" id="marginSide">
                                     <h4>Navigation</h4>
                                     <p>Smart routing that automatically adjusts to real-time traffic conditions</p>
                                 </div>
                             </main>
                             <main>
                                 <img src="images/modal3Images/Model-3-Interior-Carousel-2-Slide-3-Mobile-LHD.jpeg" alt="">
-                                <div class="borderTop">
+                                <div class="borderTop" id="marginSide">
                                     <h4>Control</h4>
                                     <p>Personalized drive settings and cabin controls</p>
                                 </div>
                             </main>
                             <main>
                                 <img src="images/modal3Images/Model-3-Interior-Carousel-2-Slide-4-Mobile-LHD.jpeg" alt="">
-                                <div class="borderTop">
+                                <div class="borderTop" id="marginSide">
                                     <h4>Climate</h4>
                                     <p>Control air flow from the dashboard, in one or two directions</p>
                                 </div>
@@ -423,252 +490,255 @@
                     </aside>
                     <div>
                         <main>
-                            <h2>Glass Roof</h2>
+                            <h2 id="paddedSide">Glass Roof</h2>
                             <p>The expansive Glass Roof in Model 3 provides passengers with a brighter, more spacious experience—and a seamless view of the sky.</p>
                         </main>
                         <img src="images/modal3Images/roof.jpeg" alt="roof">
                     </div>
                     <div>
                         <main>
-                            <h2>Premium Interior</h2>
+                            <h2 id="paddedSide">Premium Interior</h2>
                             <p>A better driving experience—with our full Glass Roof, a custom audio system and premium seating throughout.</p>
                         </main>
                         <main>
                             <img src="images/modal3Images/13e9f2e9-bb09-4acb-82b4-8346c1516d8e.jpeg" alt="">
                         </main>
                         <main>
-                            <h4>All-Weather Comfort</h4>
+                            <h4 id="paddedSide">All-Weather Comfort</h4>
                             <p>Enhance comfort and convenience with front and rear seat heaters, and heated side mirrors.</p>
                         </main>
                         <main>
-                            <h4>Pristine Sound</h4>
+                            <h4 id="paddedSide">Pristine Sound</h4>
                             <p>Our premium audio system features 14 speakers, including a subwoofer and dual amplifiers, for interior sound dynamics comparable to a recording studio.</p>
                         </main>
                         <main>
                             <img src="images/modal3Images/9e43316b-f105-4751-8c4b-9f6a34870e36.png" alt="">
                         </main>
                     </div>
-                    <button>ORDER NOW</button>
-                    <img src="images/icon-close.svg" alt="closeIcon" class="closeIcon">
+                    <button class="oppBtn">ORDER NOW</button>
+                    <img src="images/modal3Images/close.svg" alt="closeIcon" class="closeIconW">
                 </div>
             </div>
         </aside>
     </section>
-    <section>
+    <section class="LearnMoreBlackBg lastSection">
         <img src="images/modal3Images/Model-3-Specs-Desktop-Mobile-LHD.jpeg" alt="blackCar" class="blackCar">
-        <aside>
+        <aside class="modelContent">
             <h2>Model 3 Specs</h2>
             <aside>
               <div>
-                <button>Performance</button>
-                <button>Long Range AWD</button>
-                <button>Rear-Wheel Drive</button>
-                <button>Compare</button>
+                <button class="oppBtn sized">Performance</button>
+                <button class="oppBtn sized greyBorder">Long Range AWD</button>
+                <button class="oppBtn sized greyBorder">Rear-Wheel Drive</button>
+                <button class="oppBtn sized lastBtn">Compare</button>
               </div>
-              <aside id="performance">
-               <div>
-                  <span>
-                    <hr>
-                    <h5>Battery</h5>
-                    <p>Long Range</p>
-                  </span>
-                  <span>
-                    <hr>
-                    <h5>*Acceleration</h5>
-                    <p>3.1 s 0-60 mph with rollout subtracted</p>
-                  </span>
-                  <span>
-                    <hr>
-                    <h5>Range</h5>
-                    <p>315 miles (EPA est.)</p>
-                  </span>
-                  <span>
-                    <hr>
-                    <h5>Drive</h5>
-                    <p>Dual Motor All-Wheel Drive</p>
-                  </span>
-                  <span>
-                    <hr>
-                    <h5>Seating</h5>
-                    <p>5 Adults</p>
-                  </span>
-                  <span>
-                    <hr>
-                    <h5>Wheels</h5>
-                    <p>20"</p>
-                  </span>
-                </div>
-
-                <div>
-                    <span>
-                      <hr>
-                      <h5>Weight</h5>
-                      <p>4,048 lbs</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Cargo</h5>
-                      <p>23 cu ft</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Display</h5>
-                      <p>15" Center Touchscreen</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Supercharging Max/Payment Type</h5>
-                      <p>250 kW max; Pay Per Use</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Onboarding Charger Max</h5>
-                      <p>11.5 kW max(48A)</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Warranty</h5>
-                      <p>Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 120,000 mi, whichever comes first</p>
-                    </span>
-                  </div>
+              <aside class="pos">
+                <aside id="performance">
+                    <div>
+                       <span>
+                         <hr>
+                         <h5>Battery</h5>
+                         <p>Long Range</p>
+                       </span>
+                       <span>
+                         <hr>
+                         <h5>*Acceleration</h5>
+                         <p>3.1 s 0-60 mph with rollout subtracted</p>
+                       </span>
+                       <span>
+                         <hr>
+                         <h5>Range</h5>
+                         <p>315 miles (EPA est.)</p>
+                       </span>
+                       <span>
+                         <hr>
+                         <h5>Drive</h5>
+                         <p>Dual Motor All-Wheel Drive</p>
+                       </span>
+                       <span>
+                         <hr>
+                         <h5>Seating</h5>
+                         <p>5 Adults</p>
+                       </span>
+                       <span>
+                         <hr>
+                         <h5>Wheels</h5>
+                         <p>20"</p>
+                       </span>
+                     </div>
+     
+                     <div>
+                         <span>
+                           <hr>
+                           <h5>Weight</h5>
+                           <p>4,048 lbs</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Cargo</h5>
+                           <p>23 cu ft</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Display</h5>
+                           <p>15" Center Touchscreen</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Supercharging Max/Payment Type</h5>
+                           <p>250 kW max; Pay Per Use</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Onboarding Charger Max</h5>
+                           <p>11.5 kW max(48A)</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Warranty</h5>
+                           <p>Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 120,000 mi, whichever comes first</p>
+                         </span>
+                       </div>
+                   </aside>
+     
+                   <aside id="long">
+                     <div>
+                        <span>
+                          <hr>
+                          <h5>Battery</h5>
+                          <p>Long Range</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>*Acceleration</h5>
+                          <p>4.2 s 0-60 mph</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Range</h5>
+                          <p>358 miles (EPA est.)</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Drive</h5>
+                          <p>Dual Motor All-Wheel Drive</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Seating</h5>
+                          <p>5 Adults</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Wheels</h5>
+                          <p>18" or 19"</p>
+                        </span>
+                      </div>
+                      
+                      <div>
+                         <span>
+                           <hr>
+                           <h5>Weight</h5>
+                           <p>4,034 lbs</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Cargo</h5>
+                           <p>23 cu ft</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Display</h5>
+                           <p>15" Center Touchscreen</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Supercharging Max/Payment Type</h5>
+                           <p>250 kW max; Pay Per Use</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Onboarding Charger Max</h5>
+                           <p>11.5 kW max(48A)</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Warranty</h5>
+                           <p>Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 120,000 mi, whichever comes first</p>
+                         </span>
+                       </div>
+                    </aside>
+     
+                    
+                   <aside id="rear">
+                     <div>
+                        <span>
+                          <hr>
+                          <h5>Battery</h5>
+                          <p>Standard Range</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Acceleration</h5>
+                          <p>5.8 s 0-60 mph</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Range</h5>
+                          <p>272 miles (EPA est.)</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Drive</h5>
+                          <p>Rear-Wheel Drive</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Seating</h5>
+                          <p>5 Adults</p>
+                        </span>
+                        <span>
+                          <hr>
+                          <h5>Wheels</h5>
+                          <p>18" or 19"</p>
+                        </span>
+                      </div>
+                      
+                      <div>
+                         <span>
+                           <hr>
+                           <h5>Weight</h5>
+                           <p>3,862 lbs</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Cargo</h5>
+                           <p>23 cu ft</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Display</h5>
+                           <p>15" Center Touchscreen</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Supercharging Max/Payment Type</h5>
+                           <p>170 kW max; Pay Per Use</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Onboarding Charger Max</h5>
+                           <p>7.6 kW max(32A)</p>
+                         </span>
+                         <span>
+                           <hr>
+                           <h5>Warranty</h5>
+                           <p>Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 100,000 mi, whichever comes first</p>
+                         </span>
+                       </div>
+                    </aside>
               </aside>
-
-              <aside id="long">
-                <div>
-                   <span>
-                     <hr>
-                     <h5>Battery</h5>
-                     <p>Long Range</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>*Acceleration</h5>
-                     <p>4.2 s 0-60 mph</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Range</h5>
-                     <p>358 miles (EPA est.)</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Drive</h5>
-                     <p>Dual Motor All-Wheel Drive</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Seating</h5>
-                     <p>5 Adults</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Wheels</h5>
-                     <p>18" or 19"</p>
-                   </span>
-                 </div>
-                 
-                 <div>
-                    <span>
-                      <hr>
-                      <h5>Weight</h5>
-                      <p>4,034 lbs</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Cargo</h5>
-                      <p>23 cu ft</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Display</h5>
-                      <p>15" Center Touchscreen</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Supercharging Max/Payment Type</h5>
-                      <p>250 kW max; Pay Per Use</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Onboarding Charger Max</h5>
-                      <p>11.5 kW max(48A)</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Warranty</h5>
-                      <p>Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 120,000 mi, whichever comes first</p>
-                    </span>
-                  </div>
-               </aside>
-
-               
-              <aside id="rear">
-                <div>
-                   <span>
-                     <hr>
-                     <h5>Battery</h5>
-                     <p>Standard Range</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Acceleration</h5>
-                     <p>5.8 s 0-60 mph</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Range</h5>
-                     <p>272 miles (EPA est.)</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Drive</h5>
-                     <p>Rear-Wheel Drive</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Seating</h5>
-                     <p>5 Adults</p>
-                   </span>
-                   <span>
-                     <hr>
-                     <h5>Wheels</h5>
-                     <p>18" or 19"</p>
-                   </span>
-                 </div>
-                 
-                 <div>
-                    <span>
-                      <hr>
-                      <h5>Weight</h5>
-                      <p>3,862 lbs</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Cargo</h5>
-                      <p>23 cu ft</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Display</h5>
-                      <p>15" Center Touchscreen</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Supercharging Max/Payment Type</h5>
-                      <p>170 kW max; Pay Per Use</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Onboarding Charger Max</h5>
-                      <p>7.6 kW max(32A)</p>
-                    </span>
-                    <span>
-                      <hr>
-                      <h5>Warranty</h5>
-                      <p>Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 100,000 mi, whichever comes first</p>
-                    </span>
-                  </div>
-               </aside>
+              
                <aside id="compare">
                   <img src="images/icon-close.svg" alt="closeIcon">
                   <h1>Compare Model 3</h1>
@@ -677,7 +747,7 @@
                     <img src="images/modal3Images/lhd-compare-modal-long-range.png" alt="rangeCar">
                     <img src="images/modal3Images/lhd-compare-modal-standard-range.png" alt="rear-wheel">
                   </div>
-                  <div>
+                  <div class="sections firstSection">
                     <span>
                        <h4>Performance</h4> 
                        <p>Dual Motor</p>
@@ -691,11 +761,11 @@
                         <p>Rear-Wheel</p>
                     </span>
                   </div>
-                  <div>
+                  <div class="sectionsHead included">
                     <h3>Acceleration</h3>
                     <hr>
                   </div>
-                  <div>
+                  <div class="sections">
                     <span>
                         <h4>3.1s</h4>
                         <p>0-60 mph <sup>*</sup></p>
@@ -709,11 +779,11 @@
                         <p>0-60 mph</p>
                     </span>
                   </div>
-                  <div>
+                  <div class="sectionsHead">
                     <h3>Range (EPA est.)</h3>
                     <hr>
                   </div>
-                  <div>
+                  <div class="sections">
                     <span>
                         <h4>315</h4>
                         <p>miles</p>
@@ -727,11 +797,11 @@
                         <p>miles</p>
                     </span>
                   </div>
-                  <div>
+                  <div class="sectionsHead">
                     <h3>Top Speed</h3>
                     <hr>
                   </div>
-                  <div>
+                  <div class="sections">
                     <span>
                         <h4>162</h4>
                         <p>mph</p>
@@ -745,11 +815,11 @@
                         <p>mph</p>
                     </span>
                   </div>
-                  <div>
+                  <div class="sectionsHead included">
                     <h3>Wheels</h3>
                     <hr>
                   </div>
-                  <div>
+                  <div class="sections">
                     <span>
                         <p>20" Uberturbine Wheels</p>
                     </span>
@@ -762,11 +832,11 @@
                         <p>19" Sport Wheels</p>
                     </span>
                   </div>
-                  <div>
+                  <div class="sectionsHead included">
                     <h3>Included</h3>
                     <hr>
                   </div>
-                  <div>
+                  <div class="sections included">
                     <span>
                         <p>Premium Interior</p>
                     </span>
@@ -781,7 +851,7 @@
             </aside>
              
             <div id="expand">
-               <img src="" alt="">
+               <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                <h5>EXPAND LIST</h5>
             </div>
             <aside id="extended">
@@ -792,7 +862,7 @@
                     <p>Heated steering wheel</p>
                     <p>Premium seat material and trim</p>
                     <p>Upgraded audio – immersive sound</p>
-                    <p>Premium Connectivity (30 days included)</p>
+                    <p> <a href="#">Premium Connectivity</a>  (30 days included)</p>
                     <p>Tinted glass roof with ultraviolet and infrared protection</p>
                     <p>Power folding, heated side mirrors</p>
                     <p>Music and media over Bluetooth®</p>
@@ -805,7 +875,7 @@
                     <p>Heated front and rear seats</p>
                     <p>Heated steering wheel</p>
                     <p>Premium audio – 13 speakers, 1 subwoofer, 2 amps and immersive sound</p>
-                    <p>Premium Connectivity (30 days included)</p>
+                    <p><a href="#">Premium Connectivity</a>  (30 days included)</p>
                     <p>LED fog lamps</p>
                     <p>Interior floor mats</p>
                     <p>Tinted glass roof with ultraviolet and infrared protection</p>
@@ -814,20 +884,27 @@
                     <p>Custom driver profiles</p>
                     <p>Center console with storage, 4 USB ports and wireless charging for 2 smartphones</p>
                 </div>
-
-                <button>OWNER'S MANUAL</button>
+                <div class="lineContainer">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+                <div class="ownerManual">
+                    <button class="oppBtn manual">OWNER'S MANUAL</button>
+                    <img src="images/modal3Images/close.svg" alt="closeIcon" class="closeIconW">
+                </div>
+                
             </aside>
         </aside>
     </section>
 
-    <section>
+    <section class="footerSection">
         <aside>
             <h2>Experience Model 3</h2>
-            <button>ORDER NOW</button>
-            <button>COMPARE</button>
+            <button class="oppBtn first">ORDER NOW</button>
+            <button class="oppBtn">COMPARE</button>
         </aside>
         <img src="images/modal3Images/Model-3-Order-Hero-Desktop-Mobile-Global.jpeg" alt="blackCar" class="car">
-        <p>Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. Learn more about Standard Connectivity and any limitations.</p>
+        <p>Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. <a href="#">Learn more about Standard Connectivity and any limitations</a> .</p>
     </section>
     <footer>
         <a href="#">Tesla © 2022</a>
