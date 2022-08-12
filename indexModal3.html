@@ -50,22 +50,24 @@
                     <ul>
                        <a href="#"><li>Shop</li></a>
                        <a href="#"><li>Account</li></a> 
+                       <a href="#"><li class="more"><p>More</p><img src="images/modal3Images/arrowfw.svg" alt="forward arrow"></li></a>
                     </ul>
-                    <ul class="">
-                        <a href="#"><li><img src="images/" alt=""><p>Back</p></li></a>
+                    <ul class="moreContent">
+                        <a href="#"><li class="back"><img src="images/modal3Images/arrow.svg" alt=""><p>Back</p></li></a>
                         <a href="#"><li>Cybertruck</li></a>
                         <a href="#"><li>Roadster</li></a>
                         <a href="#"><li>Semi</li></a>
                         <a href="#"><li>News</li></a>
                     </ul>  
-                    <ul>
-                         <a href="#"><li>
+                    <ul class="langSectionInNav">
+                         <a href="#">
                           <img src="images/download (1).png" alt="">
                           <div>
-                            <a href="#"><h5>United States</h5></a>
-                            <a href="#"><p>English</p></a>
+                            
+                            <a href="#"><li><h5>United States</h5></li></a>
+                            <a href="#"><li><p>English</p></li></a>
                           </div>
-                       </li></a>
+                       </a>
                     </ul>
                    
 
@@ -107,17 +109,23 @@
             </div>
         </div>    
         
-        <aside id="paddedTop">
-            <h5 id="paddedSide">Safety</h5>
-            <h2 id="paddedSide">Built for Safety</h2>
-            <p id="paddedSide">Safety is the most important part of every Tesla. We design our vehicles to <a href="#">exceed safety standards.</a></p>
-            <h6 id="paddedSide">5-Star Rating</h6>
-            <p id="paddedSide">Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
-            <h6 id="paddedSide">Top Safety Pick+</h6>
-            <p id="paddedSide">Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
+        <aside id="paddedTop" class="flexedandositioned">
+            <span>
+                <h5 id="paddedSide">Safety</h5>
+                <h2 id="paddedSide">Built for Safety</h2>
+                <p id="paddedSide">Safety is the most important part of every Tesla. We design our vehicles to <a href="#">exceed safety standards.</a></p>
+            </span>
+            
+            <div class="positioned">
+                <h6 id="paddedSide">5-Star Rating</h6>
+                <p id="paddedSide">Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
+                <h6 id="paddedSide">Top Safety Pick+</h6>
+                <p id="paddedSide">Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
+            </div>
+            
             <div>
                 <div id="learnContainer">
-                    <span>
+                    <span class="learnSpan">
                         <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                     <p>LEARN MORE</p>
                     </span>
@@ -184,13 +192,13 @@
           </aside>
             
         </aside>
-        <aside id="paddedTop">
+        <aside id="paddedTop" class="flexedandositioned">
             <h5 id="paddedSide">Performance</h5>
             <h2 id="paddedSide">Quickest Acceleration</h2>
-            <p id="paddedSide">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
+            <p id="paddedSide" class="positioned">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
             <div>
                 <div id="learnContainer">
-                     <span>
+                     <span class="learnSpan2">
                         <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                         <p>LEARN MORE</p>
                     </span>
@@ -198,7 +206,7 @@
                 </div>
                 
                 <div id="learnMore" class="LearnMoreBlackBg">
-                    <main>
+                    <main class="inside">
                         <div id="paddedSide">
                             <h2>20" Überturbine Wheels and Performance Brakes</h2>
                             <p>Includes Pirelli P Zero tires and more powerful brakes for enhanced handling and performance</p>
@@ -206,7 +214,7 @@
                         <img src="images/modal3Images/cc960b88-ae42-4fee-81bb-db9e99605ed9.jpeg" alt="rim" class="rim">
                       
                     </main>
-                    <main>
+                    <main class="inside">
                         <div id="paddedSide">
                             <h2>Carbon Fiber Spoiler</h2>
                             <p>Enhanced aerodynamics and improved stability at speeds up to 162 mph</p>
@@ -214,15 +222,18 @@
                         <img src="images/modal3Images/spoiler.jpeg" alt="backlight" class="backlight">
 
                     </main>
-                    <main>
+                    <main class="inside">
                         <div id="paddedSide">
                             <h2>Performance Pedals</h2>
                             <p>Designed with aluminum alloy for enhanced interior styling</p>
                         </div>
                         <img src="images/modal3Images/211d7e83-c429-4d32-a463-7a64750c8b3e.jpeg" alt="pedels" class="pedals">
                     </main>
-                    <button class="oppBtn">ORDER NOW</button>
+                    <center>
+                        <button class="oppBtn">ORDER NOW</button>
                     <img src="images/modal3Images/close.svg" alt="closeIcon" class="closeIconW">
+                    </center>
+                    
                 </div>
             </div>
         </aside>
@@ -246,10 +257,10 @@
           </aside>
            
         </aside>
-        <aside id="paddedSide" class="pap">
+        <aside id="paddedSide" class="pap flexedandositioned">
             <h5>All-Wheel Drive</h5>
             <h2>Dual Motor</h2>
-            <p>Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel drive systems, they digitally control torque to the front and rear wheels for far better handling and traction control.</p>
+            <p class="positioned">Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel drive systems, they digitally control torque to the front and rear wheels for far better handling and traction control.</p>
             <button>ORDER NOW</button>
         </aside>
     </section>
@@ -272,13 +283,13 @@
             </aside>
            
         </aside>
-        <aside id="paddedTop">
+        <aside id="paddedTop" class="flexedandositioned">
             <h5 id="paddedSide">Range</h5>
             <h2 id="paddedSide">Go Anywhere</h2>
-            <p id="paddedSide">Model 3 is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 35,000 Superchargers worldwide, with six new locations opening every week.</p>
+            <p id="paddedSide" class="positioned">Model 3 is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 35,000 Superchargers worldwide, with six new locations opening every week.</p>
             <div>
                 <div id="learnContainer">
-                    <span>
+                    <span class="learnSpan2">
                         <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                         <p>LEARN MORE</p>
                     </span>
@@ -354,13 +365,13 @@
             </aside>
             
         </aside>
-        <aside id="paddedTop">
+        <aside id="paddedTop" class="flexedandositioned">
             <h5 id="paddedSide">Autopilot</h5>
             <h2 id="paddedSide">Future of Driving</h2>
-            <p id="paddedSide">Autopilot's advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.</p>
-            <div>
+            <p id="paddedSide" class="positioned">Autopilot's advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.</p>
+            <div class="widenGrey">
                 <div id="learnContainer">
-                    <span>
+                    <span class="learnSpan2">
                         <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                         <p>LEARN MORE</p>
                     </span>
@@ -435,13 +446,13 @@
             </aside>
             
         </aside>
-        <aside id="paddedTop">
+        <aside id="paddedTop" class="flexedandositioned">
             <h5 id="paddedSide">Interior</h5>
             <h2 id="paddedSide">Built Around the Driver</h2>
-            <p id="paddedSide">The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.</p>
+            <p id="paddedSide" class="positioned">The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.</p>
             <div>
                 <div id="learnContainer">
-                    <span>
+                    <span class="learnSpan2">
                         <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
                         <p>LEARN MORE</p>
                     </span>
@@ -753,7 +764,7 @@
               </aside>
               
                <aside id="compare">
-                  <img src="images/icon-close.svg" alt="closeIcon">
+                  <img src="images/icon-close.svg" alt="closeIcon" class="closeIcon">
                   <h1>Compare Model 3</h1>
                   <div class="imgContainer">
                     <img src="images/modal3Images/lhd-compare-modal-performance.png" alt="performanceCar">
@@ -862,9 +873,8 @@
                   </div>
                </aside>
             </aside>
-             
             <div id="expand">
-               <img src="images/modal3Images/plus.svg" alt="plus" class="plus">
+               <img src="images/modal3Images/plus2.svg" alt="plus" class="plus">
                <h5>EXPAND LIST</h5>
             </div>
             <aside id="extended">

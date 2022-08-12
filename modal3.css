@@ -58,6 +58,11 @@ button:hover{
     background-color: black;
     color: white;
 }
+.learnSpan:hover img,
+.learnSpan2:hover img{
+    border:2px solid black;
+    background-color: black;
+}
 .oppBtn{
     border:3px solid white;
     color:white;
@@ -97,12 +102,13 @@ button:hover{
     left: 0;
     width:100%;
     background-color: rgba(0, 0, 0, 0.629);
-    display: flex;
+    /* display: flex; */
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
     z-index:3;
     /* height:200vh; */
+    /* padding:0 0 50px; */
 }
 .navContent ul{
     border:3px solid white;
@@ -119,8 +125,33 @@ button:hover{
     padding:5px 10px;
     text-decoration: none;
 }
+.navContent .back,
+.navContent .more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navContent .moreContent{
+    position: absolute;
+    top:0;
+    display: none;
+}
+.navContent ul.langSectionInNav{
+    /* width:100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:0 0 90px;
+}
+.navContent .langSectionInNav div a{
+    margin:0;
+    padding: 0;
+}
+.navContent ul.langSectionInNav div li{
+    width:100px;
+}
 .navContent ul img{
-    width:3%;
+    width:60px;
 }
 
 /* SECTION 1    */
@@ -186,7 +217,7 @@ button:hover{
     margin:0 0 0 10%;
 }
  /* DRAWING OF LINE AND DOT HEAD  */
-.positionedText p:first-child::after{
+/* .positionedText p:first-child::after{
     content: "";
     height: 130px;
     width:2px;
@@ -206,14 +237,14 @@ button:hover{
     margin: 0 0 0 5px;
     border-radius: 100px;
     border:1px solid black;
-}
+}*/
 .positionedText p:nth-child(2){
     /* border:2px solid black; */
     position: absolute;
     top:10px;
     margin:0 0 0 70%;
 }
-.positionedText p:nth-child(2)::after{
+/* .positionedText p:nth-child(2)::after{
     content: "";
     height: 80px;
     width:2px;
@@ -233,7 +264,7 @@ button:hover{
     margin: 0 0 0 5px;
     border-radius: 100px;
     border:1px solid black;
-}
+} */
 .positionedText p:nth-child(3){
     /* border:2px solid black; */
     position: absolute;
@@ -243,6 +274,7 @@ button:hover{
     width: 20%;
     text-align: right;
 }
+/*
 .positionedText p:nth-child(3)::after{
     content: "";
     height: 120px;
@@ -264,7 +296,7 @@ button:hover{
     margin: 0 0 0 5px;
     border-radius: 100px;
     border:1px solid black;
-}
+} */
 .analysisVehicle{
     width: 100%;
 }
@@ -286,7 +318,7 @@ button:hover{
 }
 #learnMore{
     /* border:2px solid green; */
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -532,8 +564,7 @@ button:hover{
 }
 .lastSection .modelContent #performance,
 .lastSection .modelContent #rear,
-.lastSection .modelContent #long,
-.lastSection .modelContent #extended{
+.lastSection .modelContent #long{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -650,12 +681,24 @@ div.firstSection span h4{
 }
 #expand{
     padding:0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#expand:hover img{
+    background-color: white;
+    fill: #000;
+}
+#expand img{
+    border: 2px solid white;
+    border-radius: 100px;
 }
 #extended{
+    display: none;
     flex-direction: column;
     justify-content: center;
     margin:20px 0 40px;
-    /* border:2px solid red; */
+    border:2px solid red;
 }
 #extended div{
     padding:0;
@@ -733,32 +776,38 @@ footer a{
         width:30%;
     }
     .forDesktop{
-        /* display: none; */
+        display: block;
     }
     .analysisVehicle{
         display: none;
     }
+    .section1 .sectionAside .oppBtn{
+        width:auto;
+    }
     .section1{
-        background-image: url(images/Model-S-Main-Hero-Desktop-LHD.jpeg);
+        background-image: url(images/modal3Images/Model-3-Main-Hero-Desktop-LHD.jpeg);
     }
     .sectionAside2{
         background-image: url(images/modal3Images/Model-3-Performance-Hero-Mobile-LHD.jpeg);
-        height:50vh;
+        /* height:100vh; */
+        margin:0px 0 30px;
     }
     .sectionAside3{
         background-image:url(images/modal3Images/Model-3-AWD-Hero-Mobile-LHD.jpeg) ;
         margin:-10px 0 0 ;
-        height:50vh;
+        padding:0 0 30px;
+        /* height:50vh; */
     }
     .sectionAside4{
         background-image: url(images/modal3Images/Model-3-Range-Hero-Mobile-LHD.jpeg);
-        height:60vh;
+        /* height:60vh; */
         padding:0 0 30px;
     }
     .sectionAside5{
         background-image: url(images/modal3Images/Autopilot-Hero-Vision-Mobile.jpeg);
-        height: 60vh;
+        /* height: 60vh; */
         color: black;
+        padding:0 0 30px;
     }
     .sectionAside5 h3{
         color: black;
@@ -767,7 +816,8 @@ footer a{
         color: black;
     }
     .sectionAside6{
-        height: 60vh;
+        /* height: 60vh; */
+        padding:0 0 30px;
     }
     .sectionAside{
         justify-content: center;
@@ -806,6 +856,15 @@ footer a{
     .LearnMoreBlackBg main div{
         margin:0;
     }
+    .LearnMoreBlackBg main.inside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+    .LearnMoreBlackBg main.inside div{
+        width:95%;
+    }
     .LearnMoreBlackBg main:nth-child(3) img{
         width:63%;
     }
@@ -826,7 +885,7 @@ footer a{
         width:60%;
     }
     .positionedText {
-        height:70vh;
+        height:90%;
         margin:20px 0;
     }
     .LearnMoreBlackBg main{
@@ -907,9 +966,21 @@ footer a{
         margin:3px;
         padding: 5px;
     }
+    main video{
+        width:auto;
+        /* height: auto; */
+    }
 }
-@media screen and (min-width:1300px) {
-
+@media screen and (min-width:1200px) {
+    h3{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    .sectionAside2{
+        background-image: url(images/modal3Images/Model-3-Performance-Hero-Desktop-LHD.jpeg);
+    }
     .sectionAside2,
     .sectionAside3,
     .sectionAside4,
@@ -928,8 +999,46 @@ footer a{
         align-items: baseline;
         flex-direction: row;
     }
-    #learnMore .LearnMoreBlackBg{
-        display: block;
+    #learnMore.LearnMoreBlackBg{
+        /* display: block; */
+        padding:50px 70px 30px;
+    }
+    #learnMore.LearnMoreBlackBg .inside:nth-child(1) div,
+    #learnMore.LearnMoreBlackBg .inside:nth-child(3) div{
+        order:1;
+        /* border:2px solid red; */
+        /* text-align: center; */
+        display: flex;
+        justify-content: flex-end;
+        /* align-items: center; */
+        flex-direction: column;
+        position: relative;
+        left:7%;
+        /* padding:0 0 0 10%; */
+    }
+    #learnMore.LearnMoreBlackBg .inside:nth-child(2) img{
+        order:2;
+    }
+    #learnMore.LearnMoreBlackBg .inside:nth-child(2) p{
+        font-size: 27px;
+        width:80%;
+    }
+    #learnMore.LearnMoreBlackBg .inside:nth-child(odd) h2{
+        width:90%;  
+        /* border:2px solid red; */
+    }
+    #learnMore.LearnMoreBlackBg .inside:nth-child(odd) p{
+        width:90%;
+        /* text-align:right; */
+        font-size: 27px;
+        /* border:2px solid red; */
+    }
+    #learnMore.LearnMoreBlackBg .inside div{
+        width:100%;
+        padding:0;
+    }
+    #learnMore.LearnMoreBlackBg .inside img{
+        width:100%;
     }
     #learnMore .LearnMoreBlackBg div{
         display: flex;
@@ -940,13 +1049,12 @@ footer a{
         justify-content: center;
         align-items: center;
     }
-    .section1 .sectionAside button{
-        width:20%;
-        margin:0 0 30px;
+    .sectionAside button{
+        margin:0;
     }
     .section1 .sectionAside div{
         width:20%;
-        padding:0 0 30px;
+        padding:0 0 0px;
     }
     .navContainer{
         display: flex;
@@ -954,7 +1062,7 @@ footer a{
         align-items: center;
     }
     .navContent{
-        display: none;
+        /* display: none; */
     }
     .navContent ul{
         border:3px solid white;
@@ -987,5 +1095,58 @@ footer a{
     }
     .angled a{
         list-style-type: none;
+    }
+    #learnMore ul li{
+        justify-content: flex-start;
+    }
+    .flexedandositioned{
+        display: flex;
+        /* justify-content: ; */
+        flex-direction: column;
+        /* border:2px solid red; */
+        position: relative;
+        
+    }
+    .flexedandositioned span{
+        width:50%;
+        display: block;
+        padding:20px 50px;
+        /* background-color: red; */
+    }
+    .flexedandositioned .positioned{
+        position: absolute;
+        right:70px;
+        top:20px;
+        width:50%;
+        font-size: 20px;
+    }
+    #learnContainer .learnSpan{
+        width:auto;
+        padding:0 10px 0 50px ;
+        margin: 0;
+        /* background-color: green; */
+    }
+    #learnContainer  .learnSpan2{
+        width:auto;
+        /* border: 2px solid red; */
+        text-align: left;
+        padding:0;
+    }
+    center{
+        display: flex;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pap #paddedSide button{
+        width:30%;
+        background-color: red;
+    }
+    .flexBottom{
+        width:50%;
+    }
+    #learnMore .LearnMoreBlackBg div{
+        display: block;
     }
 }
